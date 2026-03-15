@@ -212,13 +212,12 @@ const Index = () => {
                 transitionDelay: "150ms",
               }}
             >
-              <div className="aspect-square rounded-2xl border border-border/50 bg-card/30 backdrop-blur-sm p-8 card-glow">
-                <div className="h-full w-full rounded-xl bg-gradient-to-br from-primary/10 to-accent/10 flex items-center justify-center">
-                  <div className="text-center">
-                    <BarChart3 className="h-20 w-20 text-primary/50 mx-auto mb-4 animate-float" />
-                    <p className="text-muted-foreground">Intelligence Dashboard Preview</p>
-                  </div>
-                </div>
+              <div className="aspect-square rounded-2xl border border-border/50 bg-card/30 backdrop-blur-sm overflow-hidden card-glow">
+                <img
+                  src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=700&q=80"
+                  alt="Business Intelligence Dashboard"
+                  className="h-full w-full object-cover opacity-80 transition-transform duration-700 hover:scale-105"
+                />
               </div>
               <div className="absolute -top-4 -right-4 h-32 w-32 rounded-full bg-primary/20 blur-2xl animate-pulse-glow" />
               <div className="absolute -bottom-4 -left-4 h-32 w-32 rounded-full bg-accent/20 blur-2xl animate-pulse-glow delay-300" />

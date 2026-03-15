@@ -40,11 +40,11 @@ const About = () => {
         <div className="container relative mx-auto px-6">
           <div className="mx-auto max-w-4xl text-center">
             <h1 className="mb-6 font-display text-4xl font-bold tracking-tight text-foreground md:text-5xl lg:text-6xl animate-fade-in-up">
-              A Global Agency with{" "}
-              <span className="gradient-text">South African Roots</span>
+              Built for the World's{" "}
+              <span className="gradient-text">Most Ambitious Brands</span>
             </h1>
             <p className="text-xl text-muted-foreground animate-fade-in-up delay-100">
-              And a Worldwide Mindset
+              Where Global Growth Begins
             </p>
           </div>
         </div>
@@ -53,68 +53,30 @@ const About = () => {
       {/* ── Story ──────────────────────────────────────────────── */}
       <section className="py-20 md:py-32">
         <div className="container mx-auto px-6">
-          <div ref={storySection[0]} className="grid gap-16 lg:grid-cols-2 items-center">
-            {/* Left */}
-            <div
-              style={{
-                opacity: storySection[1] ? 1 : 0,
-                transform: storySection[1] ? "none" : "translateX(-40px)",
-                transitionProperty: "opacity, transform",
-                transitionDuration: "700ms",
-                transitionTimingFunction: "cubic-bezier(0.16, 1, 0.3, 1)",
-              }}
-            >
-              <h2 className="font-display text-3xl font-bold text-foreground md:text-4xl mb-8">
-                Our Story
-              </h2>
-              <div className="space-y-6 text-lg text-muted-foreground leading-relaxed">
-                <p>
-                  Nebulla was created to bridge the gap between traditional creative agencies and the modern, AI-powered growth systems used by top global brands.
-                </p>
-                <p>
-                  With experience across South Africa, the United States, China, and the Middle East, Nebulla blends creativity, systems thinking, and automation to deliver world-class digital experiences.
-                </p>
-                <p>
-                  We believe that the future of branding lies at the intersection of human creativity and artificial intelligence — and we're building that future today.
-                </p>
-              </div>
-            </div>
-
-            {/* Right */}
-            <div
-              className="relative"
-              style={{
-                opacity: storySection[1] ? 1 : 0,
-                transform: storySection[1] ? "none" : "translateX(40px)",
-                transitionProperty: "opacity, transform",
-                transitionDuration: "700ms",
-                transitionTimingFunction: "cubic-bezier(0.16, 1, 0.3, 1)",
-                transitionDelay: "150ms",
-              }}
-            >
-              <div className="aspect-[4/3] rounded-2xl border border-border/50 bg-gradient-to-br from-card/80 to-nebula-surface/80 p-8 card-glow">
-                <div className="h-full w-full rounded-xl bg-gradient-to-br from-primary/5 to-accent/5 flex items-center justify-center">
-                  <div className="grid grid-cols-2 gap-4 p-8">
-                    {["SA", "US", "CN", "ME"].map((region, i) => (
-                      <div
-                        key={i}
-                        className="flex h-20 w-20 items-center justify-center rounded-xl border border-border/50 bg-background/50 backdrop-blur-sm transition-all duration-300 hover:border-primary/50 hover:scale-105 hover:shadow-[0_0_20px_hsl(var(--primary)/0.2)]"
-                        style={{
-                          opacity: storySection[1] ? 1 : 0,
-                          transform: storySection[1] ? "none" : "scale(0.8)",
-                          transitionProperty: "opacity, transform, border-color, box-shadow",
-                          transitionDuration: "500ms",
-                          transitionTimingFunction: "cubic-bezier(0.16, 1, 0.3, 1)",
-                          transitionDelay: `${300 + i * 80}ms`,
-                        }}
-                      >
-                        <span className="font-display text-xl font-bold text-primary">{region}</span>
-                      </div>
-                    ))}
-                  </div>
-                </div>
-              </div>
-              <div className="absolute -top-4 -right-4 h-32 w-32 rounded-full bg-primary/20 blur-2xl animate-pulse-glow" />
+          <div
+            ref={storySection[0]}
+            className="mx-auto max-w-3xl text-center"
+            style={{
+              opacity: storySection[1] ? 1 : 0,
+              transform: storySection[1] ? "none" : "translateY(40px)",
+              transitionProperty: "opacity, transform",
+              transitionDuration: "700ms",
+              transitionTimingFunction: "cubic-bezier(0.16, 1, 0.3, 1)",
+            }}
+          >
+            <h2 className="font-display text-3xl font-bold text-foreground md:text-4xl mb-8">
+              Our Story
+            </h2>
+            <div className="space-y-6 text-lg text-muted-foreground leading-relaxed">
+              <p>
+                Nebulla was created to bridge the gap between traditional creative agencies and the modern, AI-powered growth systems used by top global brands.
+              </p>
+              <p>
+                With experience across the United States, Europe, China, and the Middle East, Nebulla blends creativity, systems thinking, and automation to deliver world-class digital experiences.
+              </p>
+              <p>
+                We believe that the future of branding lies at the intersection of human creativity and artificial intelligence — and we're building that future today.
+              </p>
             </div>
           </div>
         </div>
