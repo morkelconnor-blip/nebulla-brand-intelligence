@@ -212,12 +212,36 @@ const Index = () => {
                 transitionDelay: "150ms",
               }}
             >
-              <div className="aspect-square rounded-2xl border border-border/50 bg-card/30 backdrop-blur-sm overflow-hidden card-glow">
-                <img
-                  src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=700&q=80"
-                  alt="Business Intelligence Dashboard"
-                  className="h-full w-full object-cover opacity-80 transition-transform duration-700 hover:scale-105"
-                />
+              <div className="aspect-square rounded-2xl border border-border/50 bg-card/30 backdrop-blur-sm p-6 card-glow">
+                <div className="h-full w-full rounded-xl bg-gradient-to-br from-primary/10 to-accent/10 flex flex-col gap-4 p-6 justify-center">
+                  {/* Mock dashboard bars */}
+                  {[80, 55, 90, 65, 75].map((w, i) => (
+                    <div key={i} className="flex items-center gap-3">
+                      <div className="w-8 text-xs text-muted-foreground text-right">{["Mon", "Tue", "Wed", "Thu", "Fri"][i]}</div>
+                      <div className="flex-1 h-3 rounded-full bg-primary/10 overflow-hidden">
+                        <div
+                          className="h-full rounded-full bg-gradient-to-r from-primary to-accent animate-pulse-glow"
+                          style={{ width: `${w}%`, transitionDelay: `${i * 100}ms` }}
+                        />
+                      </div>
+                      <div className="w-8 text-xs text-primary">{w}%</div>
+                    </div>
+                  ))}
+                  <div className="mt-4 flex justify-between">
+                    <div className="text-center">
+                      <p className="text-2xl font-bold text-foreground">4.2x</p>
+                      <p className="text-xs text-muted-foreground">ROI</p>
+                    </div>
+                    <div className="text-center">
+                      <p className="text-2xl font-bold text-foreground">98%</p>
+                      <p className="text-xs text-muted-foreground">Uptime</p>
+                    </div>
+                    <div className="text-center">
+                      <p className="text-2xl font-bold gradient-text">24/7</p>
+                      <p className="text-xs text-muted-foreground">Active</p>
+                    </div>
+                  </div>
+                </div>
               </div>
               <div className="absolute -top-4 -right-4 h-32 w-32 rounded-full bg-primary/20 blur-2xl animate-pulse-glow" />
               <div className="absolute -bottom-4 -left-4 h-32 w-32 rounded-full bg-accent/20 blur-2xl animate-pulse-glow delay-300" />
