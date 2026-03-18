@@ -87,21 +87,9 @@ const Index = () => {
                   <ArrowRight className="ml-2 h-5 w-5 transition-transform duration-200 group-hover:translate-x-1" />
                 </Link>
               </Button>
-              <Button variant="hero-outline" size="xl" asChild>
-                <Link to="/nebullaos">Explore NebullaOS</Link>
-              </Button>
             </div>
           </div>
 
-          {/* Trust badges */}
-          <div className="mt-20 text-center animate-fade-in-up delay-400">
-            <p className="text-sm text-muted-foreground mb-8">Trusted by teams across Europe, the United States, China & the Middle East</p>
-            <div className="flex flex-wrap items-center justify-center gap-8 opacity-60">
-              {[1, 2, 3, 4, 5].map((i) => (
-                <div key={i} className="h-8 w-24 rounded shimmer-bg" />
-              ))}
-            </div>
-          </div>
         </div>
       </section>
 
