@@ -17,7 +17,7 @@ const Footer = () => {
               <span className="font-display text-xl font-bold text-foreground">Nebulla</span>
             </Link>
             <p className="text-sm text-muted-foreground max-w-xs">
-              AI-Powered Creative Intelligence for Global Brands. Building brands designed for worldwide impact.
+              Brand strategy, design, and intelligent automation for companies with global ambitions.
             </p>
           </div>
 

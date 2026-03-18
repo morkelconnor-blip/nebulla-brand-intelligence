@@ -34,12 +34,12 @@ const NebullaOS = () => {
   };
 
   const features = [
-    { icon: BarChart3, title: "Real-time Dashboards", description: "Monitor all your KPIs in one beautiful interface" },
-    { icon: FileText, title: "Automated Reports", description: "AI-written performance reports delivered on schedule" },
-    { icon: Bot, title: "Content Generation", description: "Generate and schedule content with AI assistance" },
-    { icon: Users, title: "Competitor Intelligence", description: "Track and analyze competitor movements" },
-    { icon: Zap, title: "Workflow Automation", description: "Automate repetitive tasks across your stack" },
-    { icon: Bell, title: "Smart Alerts", description: "Get notified when metrics need your attention" }
+    { icon: BarChart3, title: "Real-time Dashboards", description: "All your key metrics in a single, clear interface. No more switching between platforms." },
+    { icon: FileText, title: "Automated Reports", description: "Scheduled, AI-generated performance reports delivered directly to your inbox." },
+    { icon: Bot, title: "Content Generation", description: "AI-assisted content creation and scheduling, aligned to your brand voice." },
+    { icon: Users, title: "Competitor Intelligence", description: "Monitor competitor positioning and activity across channels in real time." },
+    { icon: Zap, title: "Workflow Automation", description: "Eliminate repetitive tasks with custom automation built around your processes." },
+    { icon: Bell, title: "Smart Alerts", description: "Receive immediate notifications when performance metrics require your attention." }
   ];
 
   return (
@@ -66,11 +66,11 @@ const NebullaOS = () => {
             </h1>
             
             <p className="mb-4 text-xl text-muted-foreground md:text-2xl max-w-3xl mx-auto animate-fade-in-up delay-200">
-              The Intelligence Engine for Modern Brands
+              The Operating System for Brand Intelligence
             </p>
-            
+
             <p className="mb-10 text-lg text-muted-foreground max-w-2xl mx-auto animate-fade-in-up delay-300">
-              A smart operating system that merges AI, automation, analytics, and content workflows into one seamless platform.
+              A unified platform that brings together AI automation, real-time analytics, content workflows, and performance reporting — so your brand operates smarter at every level.
             </p>
             
             {/* Waitlist Form */}
@@ -99,10 +99,10 @@ const NebullaOS = () => {
         <div className="container mx-auto px-6">
           <div className="text-center mb-16">
             <h2 className="font-display text-3xl font-bold text-foreground md:text-4xl mb-4">
-              Everything You Need in One Platform
+              One Platform. Complete Visibility.
             </h2>
             <p className="text-muted-foreground max-w-2xl mx-auto">
-              NebullaOS brings together all the tools modern brands need to scale intelligently
+              NebullaOS consolidates the tools your team relies on into a single, intelligent platform.
             </p>
           </div>
           
@@ -140,16 +140,16 @@ const NebullaOS = () => {
               </h2>
               
               <p className="text-lg text-muted-foreground mb-8 leading-relaxed">
-                NebullaOS gives you a complete overview of your brand's performance, content, and automation — all in one intuitive dashboard.
+                NebullaOS consolidates your brand's performance data, content pipeline, and automation workflows into one platform — giving you complete visibility and control.
               </p>
-              
+
               <div className="space-y-4">
                 {[
-                  "Unified analytics across all platforms",
-                  "AI-powered content recommendations",
-                  "Automated reporting and insights",
-                  "Custom workflow builder",
-                  "Team collaboration tools"
+                  "Cross-platform analytics in a single dashboard",
+                  "AI-driven content recommendations based on performance data",
+                  "Automated performance reports, delivered on schedule",
+                  "A custom workflow builder with no-code configuration",
+                  "Built-in collaboration tools for distributed teams"
                 ].map((item, i) => (
                   <div key={i} className="flex items-center gap-3">
                     <CheckCircle className="h-5 w-5 text-primary flex-shrink-0" />
@@ -205,12 +205,12 @@ const NebullaOS = () => {
                 </div>
                 
                 <h2 className="font-display text-3xl font-bold text-foreground md:text-4xl mb-6">
-                  Be the First to Experience{" "}
+                  Request Early Access to{" "}
                   <span className="gradient-text">NebullaOS</span>
                 </h2>
-                
+
                 <p className="text-lg text-muted-foreground mb-8">
-                  Join our waitlist for exclusive early access and special founding member pricing.
+                  A limited number of early access spots are available. Join the list to secure your place and receive founding member pricing.
                 </p>
                 
                 <form onSubmit={handleSubmit} className="mx-auto max-w-md">

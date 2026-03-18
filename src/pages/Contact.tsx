@@ -49,11 +49,11 @@ const Contact = () => {
         <div className="container relative mx-auto px-6">
           <div className="mx-auto max-w-4xl text-center">
             <h1 className="mb-6 font-display text-4xl font-bold tracking-tight text-foreground md:text-5xl lg:text-6xl animate-fade-in-up">
-              Let's Build Something{" "}
-              <span className="gradient-text">Global</span>
+              Start the{" "}
+              <span className="gradient-text">Conversation</span>
             </h1>
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto animate-fade-in-up delay-100">
-              Book a strategy call, send us a message, or connect with us directly.
+              Whether you have a brief ready or are still defining the scope, we'll help you find the right path forward.
             </p>
           </div>
         </div>
@@ -72,7 +72,7 @@ const Contact = () => {
                 Book a Strategy Call
               </h3>
               <p className="text-muted-foreground mb-6">
-                Schedule a free 30-minute consultation to discuss your brand's potential.
+                A focused 30-minute call to understand your goals and determine how Nebulla can help.
               </p>
               <Button variant="hero" className="w-full" asChild>
                 <a href="#" target="_blank" rel="noopener noreferrer">
@@ -91,7 +91,7 @@ const Contact = () => {
                 Email Us
               </h3>
               <p className="text-muted-foreground mb-6">
-                Send us an email and we'll respond within 24 hours.
+                Prefer to write? We respond to all enquiries within one business day.
               </p>
               <Button variant="hero-outline" className="w-full" asChild>
                 <a href="mailto:hello@nebulla.agency">
@@ -109,7 +109,7 @@ const Contact = () => {
                 WhatsApp
               </h3>
               <p className="text-muted-foreground mb-6">
-                Chat with us directly for quick questions and updates.
+                For quicker exchanges, reach us directly on WhatsApp.
               </p>
               <Button variant="hero-outline" className="w-full" asChild>
                 <a href="#" target="_blank" rel="noopener noreferrer">
@@ -125,10 +125,10 @@ const Contact = () => {
             <div className="rounded-3xl border border-border/50 bg-gradient-to-br from-card/80 to-nebula-surface/50 p-8 md:p-12 backdrop-blur-sm">
               <div className="text-center mb-10">
                 <h2 className="font-display text-2xl font-bold text-foreground md:text-3xl mb-4">
-                  Send Us a Message
+                  Tell Us About Your Project
                 </h2>
                 <p className="text-muted-foreground">
-                  Tell us about your project and we'll get back to you shortly.
+                  Share the details and we'll come back to you with initial thoughts within 24 hours.
                 </p>
               </div>
 

@@ -7,18 +7,18 @@ import { useInView } from "@/hooks/use-in-view";
 import { Globe, Sparkles, Zap, Users, Target, ArrowRight, CheckCircle } from "lucide-react";
 
 const values = [
-  { icon: Globe,     title: "Global Quality",          description: "World-class standards in everything we create" },
-  { icon: Sparkles,  title: "Creative Intelligence",   description: "Where human creativity meets AI capability" },
-  { icon: Zap,       title: "AI-Enhanced Workflows",   description: "Automation that amplifies, not replaces" },
-  { icon: Users,     title: "Transparent Partnership", description: "Collaboration built on trust and clarity" },
-  { icon: Target,    title: "Measurable Results",      description: "Data-driven decisions, proven outcomes" },
+  { icon: Globe,     title: "Global Standards",         description: "We hold every deliverable to the same standard, regardless of market or project size." },
+  { icon: Sparkles,  title: "Creative Intelligence",    description: "We combine strategic thinking with AI capability to produce work that is both purposeful and precise." },
+  { icon: Zap,       title: "Systems Over Shortcuts",   description: "We build infrastructure that compounds — not quick fixes that fade." },
+  { icon: Users,     title: "Honest Collaboration",     description: "We communicate clearly, move decisively, and treat your business goals as our own." },
+  { icon: Target,    title: "Accountability to Outcomes", description: "We measure success by your results, not our output volume." },
 ];
 
 const whyItems = [
-  "Strategic brand systems that scale globally",
-  "AI-powered workflows that save time and money",
-  "Data-driven insights that drive real growth",
-  "Creative excellence backed by technology",
+  "Strategic brand systems built to scale across global markets",
+  "AI-powered workflows that reduce operational overhead",
+  "Data-driven insights that connect creative output to commercial results",
+  "One integrated partner across brand, digital, content, and automation",
 ];
 
 const About = () => {
@@ -40,11 +40,11 @@ const About = () => {
         <div className="container relative mx-auto px-6">
           <div className="mx-auto max-w-4xl text-center">
             <h1 className="mb-6 font-display text-4xl font-bold tracking-tight text-foreground md:text-5xl lg:text-6xl animate-fade-in-up">
-              Built for the World's{" "}
-              <span className="gradient-text">Most Ambitious Brands</span>
+              Built for Companies That{" "}
+              <span className="gradient-text">Think Beyond Borders</span>
             </h1>
             <p className="text-xl text-muted-foreground animate-fade-in-up delay-100">
-              Where Global Growth Begins
+              Where Ambition Meets Infrastructure
             </p>
           </div>
         </div>
@@ -69,13 +69,13 @@ const About = () => {
             </h2>
             <div className="space-y-6 text-lg text-muted-foreground leading-relaxed">
               <p>
-                Nebulla was created to bridge the gap between traditional creative agencies and the modern, AI-powered growth systems used by top global brands.
+                Nebulla was founded to close the gap between high-calibre creative output and the intelligent systems that global brands depend on to grow.
               </p>
               <p>
-                With experience across the United States, Europe, China, and the Middle East, Nebulla blends creativity, systems thinking, and automation to deliver world-class digital experiences.
+                We work with companies across Europe, the United States, China, and the Middle East — bringing consistent strategy, design, and automation to every market we enter.
               </p>
               <p>
-                We believe that the future of branding lies at the intersection of human creativity and artificial intelligence — and we're building that future today.
+                We believe the most competitive brands aren't just well-designed — they're well-engineered. That's what we build.
               </p>
             </div>
           </div>
@@ -89,10 +89,10 @@ const About = () => {
         <div className="container relative mx-auto px-6">
           <AnimateIn direction="up" className="text-center mb-16">
             <h2 className="font-display text-3xl font-bold text-foreground md:text-4xl mb-4">
-              Core Values
+              What We Stand For
             </h2>
             <p className="text-muted-foreground max-w-2xl mx-auto">
-              The principles that guide everything we do
+              The principles that shape how we work and who we work with.
             </p>
           </AnimateIn>
 
@@ -135,10 +135,10 @@ const About = () => {
 
               <div className="relative max-w-3xl">
                 <h2 className="font-display text-3xl font-bold text-foreground md:text-4xl mb-8">
-                  Why Nebulla Exists
+                  Why Nebulla
                 </h2>
                 <p className="text-xl text-muted-foreground leading-relaxed mb-8">
-                  Brands today need more than just beautiful visuals — they need systems, automation, intelligence, and consistent performance. Nebulla builds that infrastructure.
+                  Most agencies deliver creative work. We deliver the infrastructure behind it — brand systems, automation, and intelligence that perform consistently across markets.
                 </p>
 
                 <div className="space-y-4 mb-10">
@@ -163,7 +163,7 @@ const About = () => {
 
                 <Button variant="hero" size="lg" asChild>
                   <Link to="/contact" className="group">
-                    Let's Work Together
+                    Start the Conversation
                     <ArrowRight className="ml-2 h-4 w-4 transition-transform duration-200 group-hover:translate-x-1" />
                   </Link>
                 </Button>

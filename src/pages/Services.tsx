@@ -25,7 +25,7 @@ const services = [
   {
     icon: Palette,
     title: "Branding & Identity",
-    description: "Transform your brand into a globally competitive visual and strategic system.",
+    description: "A complete brand identity — visual system, tone of voice, and strategic positioning — engineered to communicate authority in any market.",
     features: [
       { icon: Sparkles,     text: "Visual identity design" },
       { icon: Layers,       text: "Logo design & systems" },
@@ -36,7 +36,7 @@ const services = [
   {
     icon: Code,
     title: "Websites & Digital Presence",
-    description: "Modern, conversion-driven websites built for scale and performance.",
+    description: "High-performance websites built to convert. Designed with clarity, developed for speed, and optimised for search from the ground up.",
     features: [
       { icon: Palette,   text: "Web design (Framer/Webflow style)" },
       { icon: Code,      text: "Fast, responsive development" },
@@ -47,7 +47,7 @@ const services = [
   {
     icon: PenTool,
     title: "Content & Social Systems",
-    description: "AI-assisted content pipelines and creative direction that converts.",
+    description: "Structured content systems powered by AI — built to keep your brand visible, consistent, and commercially relevant across every channel.",
     features: [
       { icon: PenTool,  text: "Monthly social content" },
       { icon: Bot,      text: "AI-assisted content generation" },
@@ -58,7 +58,7 @@ const services = [
   {
     icon: Zap,
     title: "Automation & Intelligence",
-    description: "Custom AI workflows and intelligent systems that scale your operations.",
+    description: "Custom AI workflows and intelligent infrastructure that reduce operational friction and allow your team to focus on decisions, not administration.",
     features: [
       { icon: Bot,       text: "AI workflows & automations" },
       { icon: BarChart3, text: "Real-time dashboards" },
@@ -240,10 +240,10 @@ const Services = () => {
               <div className="rounded-3xl bg-background/90 backdrop-blur-xl p-8 md:p-16">
                 <div className="mx-auto max-w-2xl text-center">
                   <h2 className="font-display text-3xl font-bold text-foreground md:text-4xl mb-6">
-                    Ready to <span className="gradient-text">Build with Nebulla</span>?
+                    Ready to Build a Brand That <span className="gradient-text">Competes Globally?</span>
                   </h2>
                   <p className="text-lg text-muted-foreground mb-8">
-                    Let's create something extraordinary together.
+                    Schedule a no-obligation strategy call to explore what Nebulla can build for you.
                   </p>
                   <Button variant="hero" size="xl" asChild>
                     <Link to="/contact" className="group">
