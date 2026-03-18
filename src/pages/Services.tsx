@@ -152,9 +152,6 @@ const Services = () => {
               Everything You Need to{" "}
               <span className="gradient-text">Build, Launch & Scale</span>
             </h1>
-            <p className="text-xl text-muted-foreground max-w-2xl mx-auto animate-fade-in-up delay-100">
-              A Global Brand
-            </p>
           </div>
         </div>
       </section>
