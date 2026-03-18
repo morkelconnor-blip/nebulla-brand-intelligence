@@ -1,13 +1,17 @@
 import { Link, useLocation } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 
 const Header = () => {
   const location = useLocation();
   const [isOpen, setIsOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
   const [scrollProgress, setScrollProgress] = useState(0);
+  const [underline, setUnderline] = useState<{ left: number; width: number } | null>(null);
+  const [isHovering, setIsHovering] = useState(false);
+  const navRef = useRef<HTMLDivElement>(null);
+  const linkRefs = useRef<(HTMLAnchorElement | null)[]>([]);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -29,6 +33,20 @@ const Header = () => {
   ];
 
   const isActive = (path: string) => location.pathname === path;
+
+  const handleMouseEnter = (index: number) => {
+    const link = linkRefs.current[index];
+    const nav = navRef.current;
+    if (!link || !nav) return;
+    const navRect = nav.getBoundingClientRect();
+    const linkRect = link.getBoundingClientRect();
+    setUnderline({ left: linkRect.left - navRect.left, width: linkRect.width });
+    setIsHovering(true);
+  };
+
+  const handleMouseLeave = () => {
+    setIsHovering(false);
+  };
 
   return (
     <header
@@ -58,11 +76,22 @@ const Header = () => {
           </Link>
 
           {/* Desktop Navigation */}
-          <nav className="hidden items-center gap-8 md:flex">
-            {navLinks.map((link) => (
+          <nav ref={navRef} className="hidden items-center gap-8 md:flex relative" onMouseLeave={handleMouseLeave}>
+            {/* Magic sliding underline */}
+            <span
+              className="absolute -bottom-[1px] h-0.5 bg-gradient-to-r from-primary to-accent rounded-full transition-all duration-300 ease-out pointer-events-none"
+              style={{
+                left: underline?.left ?? 0,
+                width: underline?.width ?? 0,
+                opacity: isHovering ? 1 : 0,
+              }}
+            />
+            {navLinks.map((link, i) => (
               <Link
                 key={link.to}
                 to={link.to}
+                ref={(el) => { linkRefs.current[i] = el; }}
+                onMouseEnter={() => handleMouseEnter(i)}
                 className={`relative font-medium transition-colors duration-300 ${
                   isActive(link.to)
                     ? "text-primary"
@@ -70,16 +99,12 @@ const Header = () => {
                 }`}
               >
                 {link.label}
-                {/* Active underline */}
+                {/* Persistent active underline */}
                 <span
-                  className={`absolute -bottom-1 left-0 h-0.5 bg-gradient-to-r from-primary to-accent transition-all duration-300 ${
-                    isActive(link.to) ? "w-full opacity-100" : "w-0 opacity-0"
+                  className={`absolute -bottom-1 left-0 h-0.5 bg-gradient-to-r from-primary to-accent rounded-full transition-all duration-300 ${
+                    isActive(link.to) && !isHovering ? "w-full opacity-100" : "w-0 opacity-0"
                   }`}
                 />
-                {/* Hover underline */}
-                {!isActive(link.to) && (
-                  <span className="absolute -bottom-1 left-0 h-0.5 w-0 bg-gradient-to-r from-primary/50 to-accent/50 transition-all duration-300 group-hover:w-full" />
-                )}
               </Link>
             ))}
           </nav>
