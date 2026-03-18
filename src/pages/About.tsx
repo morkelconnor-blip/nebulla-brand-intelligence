@@ -4,14 +4,15 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { AnimateIn } from "@/components/AnimateIn";
 import { useInView } from "@/hooks/use-in-view";
-import { Globe, Sparkles, Zap, Users, Target, ArrowRight, CheckCircle } from "lucide-react";
+import { Globe, Sparkles, Zap, Users, Target, LayoutGrid, ArrowRight, CheckCircle } from "lucide-react";
 
 const values = [
-  { icon: Globe,     title: "Global Standards",         description: "We hold every deliverable to the same standard, regardless of market or project size." },
-  { icon: Sparkles,  title: "Creative Intelligence",    description: "We combine strategic thinking with AI capability to produce work that is both purposeful and precise." },
-  { icon: Zap,       title: "Systems Over Shortcuts",   description: "We build infrastructure that compounds — not quick fixes that fade." },
-  { icon: Users,     title: "Honest Collaboration",     description: "We communicate clearly, move decisively, and treat your business goals as our own." },
-  { icon: Target,    title: "Accountability to Outcomes", description: "We measure success by your results, not our output volume." },
+  { icon: Globe,       title: "Global Standards",           description: "We hold every deliverable to the same standard, regardless of market or project size." },
+  { icon: Sparkles,    title: "Creative Intelligence",      description: "We combine strategic thinking with AI capability to produce work that is both purposeful and precise." },
+  { icon: Zap,         title: "Systems Over Shortcuts",     description: "We build infrastructure that compounds — not quick fixes that fade." },
+  { icon: Users,       title: "Honest Collaboration",       description: "We communicate clearly, move decisively, and treat your business goals as our own." },
+  { icon: Target,      title: "Accountability to Outcomes", description: "We measure success by your results, not our output volume." },
+  { icon: LayoutGrid,  title: "Precision at Scale",         description: "We design every brand touchpoint to perform consistently across regions, languages, and channels — without sacrificing quality." },
 ];
 
 const whyItems = [
