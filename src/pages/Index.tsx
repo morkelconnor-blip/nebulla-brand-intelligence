@@ -11,25 +11,25 @@ const serviceItems = [
   {
     icon: Palette,
     title: "Branding & Identity",
-    description: "Transform your brand into a globally competitive visual and strategic system that resonates across cultures.",
+    description: "A complete visual and strategic identity system — built to communicate authority from day one and scale across every market you enter.",
   },
   {
     icon: Code,
     title: "Websites & SEO",
-    description: "Modern, conversion-driven websites built for scale and performance with cutting-edge technology.",
+    description: "Conversion-focused websites engineered for performance, built to rank, and designed to turn visitors into qualified leads.",
   },
   {
     icon: PenTool,
     title: "Content & Creative Systems",
-    description: "AI-assisted content pipelines, social design, and storytelling that convert audiences into customers.",
+    description: "Structured content systems — consistently branded, AI-assisted, and built to grow audience trust across every channel.",
   },
 ];
 
 const automationItems = [
-  "Custom AI workflow automation",
-  "Real-time analytics dashboards",
-  "Automated performance reporting",
-  "Intelligent content generation",
+  "Custom AI workflows tailored to your operations",
+  "Real-time performance dashboards",
+  "Scheduled automated reporting",
+  "AI-assisted content at scale",
 ];
 
 const nebullaOSFeatures = [
@@ -67,17 +67,17 @@ const Index = () => {
           <div className="mx-auto max-w-4xl text-center">
             <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-border/50 bg-card/50 px-4 py-2 backdrop-blur-sm animate-fade-in-up">
               <Sparkles className="h-4 w-4 text-primary animate-spin-slow" />
-              <span className="text-sm text-muted-foreground">Creative Intelligence Meets Automation</span>
+              <span className="text-sm text-muted-foreground">Where Strategy Meets Intelligent Execution</span>
             </div>
 
             <h1 className="mb-6 font-display text-4xl font-bold tracking-tight text-foreground md:text-6xl lg:text-7xl animate-fade-in-up delay-100">
-              AI-Powered Creative{" "}
-              <span className="gradient-text">Intelligence</span>{" "}
-              for Global Brands
+              Brands Built to{" "}
+              <span className="gradient-text">Compete.</span>{" "}
+              Anywhere.
             </h1>
 
             <p className="mb-10 text-lg text-muted-foreground md:text-xl max-w-2xl mx-auto animate-fade-in-up delay-200">
-              Nebulla blends strategic creativity, automation, and data-driven insight to build brands designed for global impact.
+              Nebulla partners with ambitious companies to build brand systems, digital infrastructure, and AI-powered workflows designed to perform in any market.
             </p>
 
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4 animate-fade-in-up delay-300">
@@ -95,7 +95,7 @@ const Index = () => {
 
           {/* Trust badges */}
           <div className="mt-20 text-center animate-fade-in-up delay-400">
-            <p className="text-sm text-muted-foreground mb-8">Trusted by teams in SA, Europe, China & the Middle East</p>
+            <p className="text-sm text-muted-foreground mb-8">Trusted by teams across Europe, the United States, China & the Middle East</p>
             <div className="flex flex-wrap items-center justify-center gap-8 opacity-60">
               {[1, 2, 3, 4, 5].map((i) => (
                 <div key={i} className="h-8 w-24 rounded shimmer-bg" />
@@ -110,10 +110,10 @@ const Index = () => {
         <div className="container mx-auto px-6">
           <AnimateIn direction="up" className="text-center mb-16">
             <h2 className="font-display text-3xl font-bold text-foreground md:text-4xl mb-4">
-              What We Do
+              What We Deliver
             </h2>
             <p className="text-muted-foreground max-w-2xl mx-auto">
-              Comprehensive services designed to transform your brand into a global powerhouse
+              End-to-end brand and digital services built for companies with global ambitions.
             </p>
           </AnimateIn>
 
@@ -169,12 +169,12 @@ const Index = () => {
               </div>
 
               <h2 className="font-display text-3xl font-bold text-foreground md:text-4xl mb-6">
-                Where Creativity Meets{" "}
-                <span className="gradient-text">Automation</span>
+                Where Strategy Meets{" "}
+                <span className="gradient-text">Execution</span>
               </h2>
 
               <p className="text-lg text-muted-foreground mb-8 leading-relaxed">
-                Nebulla builds custom AI workflows, dashboards, and automated reporting systems that help brands scale smarter, faster, and globally. Our intelligent systems work 24/7 so you don't have to.
+                We build the systems behind the brand — custom AI workflows, real-time dashboards, and automated reporting infrastructure that allow your business to scale without adding headcount.
               </p>
 
               <div className="space-y-4">
@@ -265,7 +265,7 @@ const Index = () => {
                 <div>
                   <div className="inline-flex items-center gap-2 rounded-full bg-primary/10 px-4 py-2 mb-6">
                     <Globe className="h-4 w-4 text-primary" />
-                    <span className="text-sm text-primary font-medium">Coming Soon</span>
+                    <span className="text-sm text-primary font-medium">Early Access</span>
                   </div>
 
                   <h2 className="font-display text-3xl font-bold text-foreground md:text-4xl mb-6">
@@ -274,12 +274,12 @@ const Index = () => {
                   </h2>
 
                   <p className="text-lg text-muted-foreground mb-8 leading-relaxed">
-                    Our proprietary automation and intelligence platform for real-time analytics, AI content generation, automated reporting, and performance tracking.
+                    A proprietary intelligence platform — real-time analytics, AI content generation, automated reporting, and performance tracking, unified in one dashboard.
                   </p>
 
                   <Button variant="hero" size="lg" asChild>
                     <Link to="/nebullaos" className="group">
-                      Join the Waitlist
+                      Request Early Access
                       <ArrowRight className="ml-2 h-4 w-4 transition-transform duration-200 group-hover:translate-x-1" />
                     </Link>
                   </Button>
@@ -326,11 +326,11 @@ const Index = () => {
               <div className="rounded-3xl bg-background/90 backdrop-blur-xl p-8 md:p-16">
                 <div className="mx-auto max-w-2xl text-center">
                   <h2 className="font-display text-3xl font-bold text-foreground md:text-4xl mb-6">
-                    Ready to Build a{" "}
-                    <span className="gradient-text">Global-Standard</span> Brand?
+                    Ready to Build a Brand That{" "}
+                    <span className="gradient-text">Competes Globally?</span>
                   </h2>
                   <p className="text-lg text-muted-foreground mb-8">
-                    Let's discuss how Nebulla can transform your brand into a worldwide success story.
+                    Schedule a no-obligation strategy call to explore what Nebulla can build for you.
                   </p>
                   <Button variant="hero" size="xl" asChild>
                     <Link to="/contact" className="group">
