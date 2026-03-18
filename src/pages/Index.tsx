@@ -151,100 +151,49 @@ const Index = () => {
         <div className="container relative mx-auto px-6">
           <div
             ref={automationSection.ref}
-            className="grid gap-16 lg:grid-cols-2 items-center"
+            className="mx-auto max-w-3xl"
+            style={{
+              opacity: automationSection.inView ? 1 : 0,
+              transform: automationSection.inView ? "none" : "translateY(40px)",
+              transitionProperty: "opacity, transform",
+              transitionDuration: "700ms",
+              transitionTimingFunction: "cubic-bezier(0.16, 1, 0.3, 1)",
+            }}
           >
-            {/* Left content */}
-            <div
-              style={{
-                opacity: automationSection.inView ? 1 : 0,
-                transform: automationSection.inView ? "none" : "translateX(-40px)",
-                transitionProperty: "opacity, transform",
-                transitionDuration: "700ms",
-                transitionTimingFunction: "cubic-bezier(0.16, 1, 0.3, 1)",
-              }}
-            >
-              <div className="inline-flex items-center gap-2 rounded-full border border-primary/30 bg-primary/10 px-4 py-2 mb-6">
-                <Zap className="h-4 w-4 text-primary" />
-                <span className="text-sm text-primary">Intelligent Automation</span>
-              </div>
-
-              <h2 className="font-display text-3xl font-bold text-foreground md:text-4xl mb-6">
-                Where Strategy Meets{" "}
-                <span className="gradient-text">Execution</span>
-              </h2>
-
-              <p className="text-lg text-muted-foreground mb-8 leading-relaxed">
-                We build the systems behind the brand — custom AI workflows, real-time dashboards, and automated reporting infrastructure that allow your business to scale without adding headcount.
-              </p>
-
-              <div className="space-y-4">
-                {automationItems.map((item, i) => (
-                  <div
-                    key={i}
-                    className="flex items-center gap-3"
-                    style={{
-                      opacity: automationSection.inView ? 1 : 0,
-                      transform: automationSection.inView ? "none" : "translateX(-20px)",
-                      transitionProperty: "opacity, transform",
-                      transitionDuration: "500ms",
-                      transitionTimingFunction: "cubic-bezier(0.16, 1, 0.3, 1)",
-                      transitionDelay: `${200 + i * 80}ms`,
-                    }}
-                  >
-                    <div className="flex h-6 w-6 items-center justify-center rounded-full bg-primary/20 transition-transform duration-300 hover:scale-110">
-                      <div className="h-2 w-2 rounded-full bg-primary" />
-                    </div>
-                    <span className="text-foreground">{item}</span>
-                  </div>
-                ))}
-              </div>
+            <div className="inline-flex items-center gap-2 rounded-full border border-primary/30 bg-primary/10 px-4 py-2 mb-6">
+              <Zap className="h-4 w-4 text-primary" />
+              <span className="text-sm text-primary">Intelligent Automation</span>
             </div>
 
-            {/* Right visual */}
-            <div
-              className="relative"
-              style={{
-                opacity: automationSection.inView ? 1 : 0,
-                transform: automationSection.inView ? "none" : "translateX(40px)",
-                transitionProperty: "opacity, transform",
-                transitionDuration: "700ms",
-                transitionTimingFunction: "cubic-bezier(0.16, 1, 0.3, 1)",
-                transitionDelay: "150ms",
-              }}
-            >
-              <div className="aspect-square rounded-2xl border border-border/50 bg-card/30 backdrop-blur-sm p-6 card-glow">
-                <div className="h-full w-full rounded-xl bg-gradient-to-br from-primary/10 to-accent/10 flex flex-col gap-4 p-6 justify-center">
-                  {/* Mock dashboard bars */}
-                  {[80, 55, 90, 65, 75].map((w, i) => (
-                    <div key={i} className="flex items-center gap-3">
-                      <div className="w-8 text-xs text-muted-foreground text-right">{["Mon", "Tue", "Wed", "Thu", "Fri"][i]}</div>
-                      <div className="flex-1 h-3 rounded-full bg-primary/10 overflow-hidden">
-                        <div
-                          className="h-full rounded-full bg-gradient-to-r from-primary to-accent animate-pulse-glow"
-                          style={{ width: `${w}%`, transitionDelay: `${i * 100}ms` }}
-                        />
-                      </div>
-                      <div className="w-8 text-xs text-primary">{w}%</div>
-                    </div>
-                  ))}
-                  <div className="mt-4 flex justify-between">
-                    <div className="text-center">
-                      <p className="text-2xl font-bold text-foreground">4.2x</p>
-                      <p className="text-xs text-muted-foreground">ROI</p>
-                    </div>
-                    <div className="text-center">
-                      <p className="text-2xl font-bold text-foreground">98%</p>
-                      <p className="text-xs text-muted-foreground">Uptime</p>
-                    </div>
-                    <div className="text-center">
-                      <p className="text-2xl font-bold gradient-text">24/7</p>
-                      <p className="text-xs text-muted-foreground">Active</p>
-                    </div>
+            <h2 className="font-display text-3xl font-bold text-foreground md:text-4xl mb-6">
+              Where Strategy Meets{" "}
+              <span className="gradient-text">Execution</span>
+            </h2>
+
+            <p className="text-lg text-muted-foreground mb-8 leading-relaxed">
+              We build the systems behind the brand — custom AI workflows, real-time dashboards, and automated reporting infrastructure that allow your business to scale without adding headcount.
+            </p>
+
+            <div className="space-y-4">
+              {automationItems.map((item, i) => (
+                <div
+                  key={i}
+                  className="flex items-center gap-3"
+                  style={{
+                    opacity: automationSection.inView ? 1 : 0,
+                    transform: automationSection.inView ? "none" : "translateX(-20px)",
+                    transitionProperty: "opacity, transform",
+                    transitionDuration: "500ms",
+                    transitionTimingFunction: "cubic-bezier(0.16, 1, 0.3, 1)",
+                    transitionDelay: `${200 + i * 80}ms`,
+                  }}
+                >
+                  <div className="flex h-6 w-6 items-center justify-center rounded-full bg-primary/20 transition-transform duration-300 hover:scale-110">
+                    <div className="h-2 w-2 rounded-full bg-primary" />
                   </div>
+                  <span className="text-foreground">{item}</span>
                 </div>
-              </div>
-              <div className="absolute -top-4 -right-4 h-32 w-32 rounded-full bg-primary/20 blur-2xl animate-pulse-glow" />
-              <div className="absolute -bottom-4 -left-4 h-32 w-32 rounded-full bg-accent/20 blur-2xl animate-pulse-glow delay-300" />
+              ))}
             </div>
           </div>
         </div>
