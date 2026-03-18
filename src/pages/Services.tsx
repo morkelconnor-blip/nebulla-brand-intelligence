@@ -141,7 +141,7 @@ const Services = () => {
       <Header />
 
       {/* ── Hero ───────────────────────────────────────────────── */}
-      <section className="relative pt-32 pb-20 md:pt-40 md:pb-24 overflow-hidden">
+      <section className="relative pt-24 pb-12 md:pt-32 md:pb-16 overflow-hidden">
         <div className="absolute inset-0 overflow-hidden">
           <div className="absolute top-1/4 right-1/4 h-96 w-96 rounded-full bg-primary/10 blur-3xl animate-pulse-glow" />
         </div>
@@ -160,7 +160,7 @@ const Services = () => {
       </section>
 
       {/* ── Services Grid ──────────────────────────────────────── */}
-      <section className="py-20 md:py-32">
+      <section className="py-12 md:py-20">
         <div className="container mx-auto px-6">
           <div className="space-y-16">
             {services.map((service, i) => (
@@ -171,11 +171,11 @@ const Services = () => {
       </section>
 
       {/* ── Process Section ────────────────────────────────────── */}
-      <section className="py-20 md:py-32 relative">
+      <section className="py-12 md:py-20 relative">
         <div className="absolute inset-0 bg-gradient-to-b from-transparent via-nebula-surface/30 to-transparent" />
 
         <div className="container relative mx-auto px-6">
-          <AnimateIn direction="up" className="text-center mb-16">
+          <AnimateIn direction="up" className="text-center mb-10">
             <h2 className="font-display text-3xl font-bold text-foreground md:text-4xl mb-4">
               Our Process
             </h2>
@@ -225,7 +225,7 @@ const Services = () => {
       </section>
 
       {/* ── CTA ────────────────────────────────────────────────── */}
-      <section className="py-20 md:py-32">
+      <section className="py-12 md:py-20">
         <div className="container mx-auto px-6" ref={ctaSection[0]}>
           <div
             style={{

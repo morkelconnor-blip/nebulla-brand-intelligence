@@ -56,7 +56,7 @@ const Index = () => {
       <Header />
 
       {/* ── Hero Section ───────────────────────────────────────── */}
-      <section className="relative pt-32 pb-20 md:pt-40 md:pb-32 overflow-hidden">
+      <section className="relative pt-24 pb-12 md:pt-32 md:pb-20 overflow-hidden">
         {/* Background blobs */}
         <div className="absolute inset-0 overflow-hidden">
           <div className="absolute top-1/4 left-1/4 h-96 w-96 rounded-full bg-primary/10 blur-3xl animate-pulse-glow" />
@@ -106,9 +106,9 @@ const Index = () => {
       </section>
 
       {/* ── What We Do Section ─────────────────────────────────── */}
-      <section className="py-20 md:py-32">
+      <section className="py-12 md:py-20">
         <div className="container mx-auto px-6">
-          <AnimateIn direction="up" className="text-center mb-16">
+          <AnimateIn direction="up" className="text-center mb-10">
             <h2 className="font-display text-3xl font-bold text-foreground md:text-4xl mb-4">
               What We Deliver
             </h2>
@@ -145,7 +145,7 @@ const Index = () => {
       </section>
 
       {/* ── Automation Section ─────────────────────────────────── */}
-      <section className="py-20 md:py-32 relative overflow-hidden">
+      <section className="py-12 md:py-20 relative overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-b from-transparent via-nebula-surface/50 to-transparent" />
 
         <div className="container relative mx-auto px-6">
@@ -200,7 +200,7 @@ const Index = () => {
       </section>
 
       {/* ── NebullaOS Preview ──────────────────────────────────── */}
-      <section className="py-20 md:py-32">
+      <section className="py-12 md:py-20">
         <div className="container mx-auto px-6">
           <AnimateIn direction="scale">
             <div
@@ -260,7 +260,7 @@ const Index = () => {
       </section>
 
       {/* ── CTA Section ────────────────────────────────────────── */}
-      <section className="py-20 md:py-32">
+      <section className="py-12 md:py-20">
         <div className="container mx-auto px-6" ref={ctaSection.ref}>
           <div
             style={{

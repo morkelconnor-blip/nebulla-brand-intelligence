@@ -40,7 +40,7 @@ const Contact = () => {
       <Header />
       
       {/* Hero */}
-      <section className="relative pt-32 pb-20 md:pt-40 md:pb-24 overflow-hidden">
+      <section className="relative pt-24 pb-12 md:pt-32 md:pb-16 overflow-hidden">
         <div className="absolute inset-0 overflow-hidden">
           <div className="absolute top-1/3 left-1/4 h-96 w-96 rounded-full bg-accent/10 blur-3xl animate-pulse-glow" />
           <div className="absolute bottom-1/3 right-1/4 h-96 w-96 rounded-full bg-primary/10 blur-3xl animate-pulse-glow delay-300" />
@@ -60,7 +60,7 @@ const Contact = () => {
       </section>
 
       {/* Contact Options */}
-      <section className="py-20 md:py-32">
+      <section className="py-12 md:py-20">
         <div className="container mx-auto px-6">
           <div className="grid gap-8 lg:grid-cols-3 mb-20">
             {/* Book a Call */}

@@ -47,7 +47,7 @@ const NebullaOS = () => {
       <Header />
       
       {/* Hero */}
-      <section className="relative pt-32 pb-20 md:pt-40 md:pb-32 overflow-hidden">
+      <section className="relative pt-24 pb-12 md:pt-32 md:pb-20 overflow-hidden">
         <div className="absolute inset-0 overflow-hidden">
           <div className="absolute top-1/4 left-1/3 h-[500px] w-[500px] rounded-full bg-primary/15 blur-3xl animate-pulse-glow" />
           <div className="absolute bottom-1/4 right-1/3 h-[500px] w-[500px] rounded-full bg-accent/15 blur-3xl animate-pulse-glow delay-500" />
@@ -95,9 +95,9 @@ const NebullaOS = () => {
       </section>
 
       {/* Features Grid */}
-      <section className="py-20 md:py-32">
+      <section className="py-12 md:py-20">
         <div className="container mx-auto px-6">
-          <div className="text-center mb-16">
+          <div className="text-center mb-10">
             <h2 className="font-display text-3xl font-bold text-foreground md:text-4xl mb-4">
               One Platform. Complete Visibility.
             </h2>
@@ -128,7 +128,7 @@ const NebullaOS = () => {
       </section>
 
       {/* Dashboard Preview */}
-      <section className="py-20 md:py-32 relative">
+      <section className="py-12 md:py-20 relative">
         <div className="absolute inset-0 bg-gradient-to-b from-transparent via-nebula-surface/30 to-transparent" />
         
         <div className="container relative mx-auto px-6">
@@ -194,7 +194,7 @@ const NebullaOS = () => {
       </section>
 
       {/* Early Access CTA */}
-      <section className="py-20 md:py-32">
+      <section className="py-12 md:py-20">
         <div className="container mx-auto px-6">
           <div className="relative rounded-3xl bg-gradient-to-r from-primary/20 via-accent/20 to-primary/20 p-px">
             <div className="rounded-3xl bg-background/90 backdrop-blur-xl p-8 md:p-16">
