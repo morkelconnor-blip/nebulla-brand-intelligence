@@ -83,7 +83,7 @@ const Contact = () => {
       {/* Contact Options */}
       <section className="py-12 md:py-20">
         <div className="container mx-auto px-6">
-          <div className="grid gap-8 lg:grid-cols-3 mb-20">
+          <div className="grid gap-8 lg:grid-cols-2 max-w-3xl mx-auto mb-20">
             {/* Book a Call */}
             <div className="group rounded-2xl border border-border/50 bg-card/30 p-8 backdrop-blur-sm transition-all duration-500 hover:border-primary/50 card-glow">
               <div className="mb-6 inline-flex rounded-xl bg-gradient-to-br from-primary/20 to-accent/20 p-4">

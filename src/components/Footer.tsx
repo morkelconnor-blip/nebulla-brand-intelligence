@@ -8,13 +8,7 @@ const Footer = () => {
           {/* Brand */}
           <div className="space-y-4">
             <Link to="/" className="flex items-center gap-2">
-              <div className="relative h-10 w-10">
-                <div className="absolute inset-0 rounded-full bg-gradient-to-br from-primary to-accent opacity-80 blur-sm" />
-                <div className="relative flex h-full w-full items-center justify-center rounded-full bg-gradient-to-br from-primary to-accent">
-                  <span className="font-display text-lg font-bold text-primary-foreground">N</span>
-                </div>
-              </div>
-              <span className="font-display text-xl font-bold text-foreground">Nebulla</span>
+              <img src="/favicon.svg" alt="Nebulla" className="h-8 w-8" />
             </Link>
             <p className="text-sm text-muted-foreground max-w-xs">
               Brand strategy, design, and intelligent automation for companies with global ambitions.
