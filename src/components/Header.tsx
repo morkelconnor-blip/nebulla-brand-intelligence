@@ -92,9 +92,6 @@ const Header = () => {
                 fill="url(#logo-gradient)"
               >N</text>
             </svg>
-            <span className="font-display text-xl font-bold tracking-wide leading-none text-foreground transition-colors duration-300 group-hover:text-primary">
-              Nebulla
-            </span>
           </Link>
 
           {/* Desktop Navigation */}
