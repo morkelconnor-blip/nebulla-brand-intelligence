@@ -73,7 +73,7 @@ const About = () => {
                 Nebulla was founded to close the gap between high-calibre creative output and the intelligent systems that global brands depend on to grow.
               </p>
               <p>
-                We work with companies across Europe, the United States, China, and the Middle East — bringing consistent strategy, design, and automation to every market we enter.
+                We work with companies across the globe — bringing consistent strategy, design, and automation to every market we enter.
               </p>
               <p>
                 We believe the most competitive brands aren't just well-designed — they're well-engineered. That's what we build.
