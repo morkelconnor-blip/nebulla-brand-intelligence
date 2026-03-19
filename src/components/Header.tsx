@@ -66,13 +66,33 @@ const Header = () => {
         <div className="flex h-20 items-center justify-between">
           {/* Logo */}
           <Link to="/" className="flex items-center gap-2 group">
-            <div className="relative h-10 w-10">
-              <div className="absolute inset-0 rounded-full bg-gradient-to-br from-primary to-accent opacity-80 blur-sm transition-all duration-300 group-hover:opacity-100 group-hover:blur-md" />
-              <div className="relative flex h-full w-full items-center justify-center rounded-full bg-gradient-to-br from-primary to-accent transition-transform duration-300 group-hover:scale-105">
-                <span className="font-display text-lg font-bold text-primary-foreground">N</span>
-              </div>
-            </div>
-            <span className="font-display text-xl font-bold text-foreground transition-colors duration-300 group-hover:text-primary">Nebulla</span>
+            <svg
+              width="36"
+              height="36"
+              viewBox="0 0 32 32"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              className="transition-transform duration-300 group-hover:scale-110"
+            >
+              <defs>
+                <linearGradient id="logo-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                  <stop offset="0%" stopColor="#7c3aed" />
+                  <stop offset="100%" stopColor="#38bdf8" />
+                </linearGradient>
+              </defs>
+              <text
+                x="16"
+                y="23"
+                fontFamily="Arial Black, Arial, sans-serif"
+                fontSize="20"
+                fontWeight="900"
+                textAnchor="middle"
+                fill="url(#logo-gradient)"
+              >N</text>
+            </svg>
+            <span className="font-display text-xl font-bold tracking-wide text-foreground transition-colors duration-300 group-hover:text-primary">
+              Nebulla
+            </span>
           </Link>
 
           {/* Desktop Navigation */}
