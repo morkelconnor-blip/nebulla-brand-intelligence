@@ -3,6 +3,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import { Helmet } from "react-helmet-async";
 import { 
   BarChart3, 
   Bot, 
@@ -44,6 +45,14 @@ const NebullaOS = () => {
 
   return (
     <div className="min-h-screen bg-background nebula-bg">
+      <Helmet>
+        <title>NebullaOS | The Intelligence Platform Behind Every Nebulla System</title>
+        <meta name="description" content="NebullaOS is Nebulla's proprietary operating platform — unified AI agents, real-time analytics, automated reporting, and performance intelligence in one dashboard. Built by delivering real systems first." />
+        <meta name="keywords" content="NebullaOS, AI operating system, business intelligence platform, AI dashboard, automated reporting, real-time analytics, AI agents, workflow intelligence platform" />
+        <meta property="og:title" content="NebullaOS | AI Intelligence Platform for Modern Businesses" />
+        <meta property="og:description" content="Real-time analytics, AI content generation, automated reporting, and performance tracking — unified in one proprietary platform. Coming soon." />
+        <link rel="canonical" href="https://nebulla.agency/nebullaos" />
+      </Helmet>
       <Header />
       
       {/* Hero */}

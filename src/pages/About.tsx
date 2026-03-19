@@ -5,6 +5,7 @@ import Footer from "@/components/Footer";
 import { AnimateIn } from "@/components/AnimateIn";
 import { useInView } from "@/hooks/use-in-view";
 import { Globe, Sparkles, Zap, Users, Target, LayoutGrid, ArrowRight, CheckCircle } from "lucide-react";
+import { Helmet } from "react-helmet-async";
 
 const values = [
   { icon: Globe,       title: "Global Standards",           description: "We hold every deliverable to the same standard, regardless of market or project size." },
@@ -29,6 +30,14 @@ const About = () => {
 
   return (
     <div className="min-h-screen bg-background nebula-bg animate-page-enter">
+      <Helmet>
+        <title>About Nebulla | The AI-Native Agency Built for How Business Actually Scales</title>
+        <meta name="description" content="Nebulla was built to close the gap between creative output and the intelligent systems businesses depend on to grow. We design, deploy, and continuously optimise AI-driven systems for ambitious companies worldwide." />
+        <meta name="keywords" content="about Nebulla, AI-native agency, AI operations agency, intelligent automation company, brand and automation agency, AI systems for business, growth and operations agency" />
+        <meta property="og:title" content="About Nebulla | The AI-Native Agency Built for How Business Actually Scales" />
+        <meta property="og:description" content="We believe the most competitive businesses aren't just well-designed — they're well-engineered. Nebulla builds the systems behind the brand." />
+        <link rel="canonical" href="https://nebulla.agency/about" />
+      </Helmet>
       <Header />
 
       {/* ── Hero ───────────────────────────────────────────────── */}

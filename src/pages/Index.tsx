@@ -6,6 +6,7 @@ import ServiceCard from "@/components/ServiceCard";
 import { AnimateIn } from "@/components/AnimateIn";
 import { useInView } from "@/hooks/use-in-view";
 import { Sparkles, Globe, Zap, BarChart3, Palette, Code, PenTool, ArrowRight } from "lucide-react";
+import { Helmet } from "react-helmet-async";
 
 const serviceItems = [
   {
@@ -53,6 +54,15 @@ const Index = () => {
 
   return (
     <div className="min-h-screen bg-background nebula-bg animate-page-enter">
+      <Helmet>
+        <title>Nebulla | AI-Native Growth &amp; Automation Agency for Ambitious Businesses</title>
+        <meta name="description" content="Nebulla replaces manual execution with automated systems — AI workflows, brand infrastructure, high-converting websites, and real-time intelligence for businesses built to scale." />
+        <meta name="keywords" content="AI agency, AI automation agency, growth agency, AI-native agency, workflow automation, brand strategy, web design agency, CRM automation, AI workflows, NebullaOS, intelligent automation, business automation" />
+        <meta property="og:title" content="Nebulla | AI-Native Growth & Automation Agency for Ambitious Businesses" />
+        <meta property="og:description" content="We replace manual execution with automated systems. AI workflows, brand infrastructure, and intelligent operations for businesses built to scale globally." />
+        <meta name="twitter:title" content="Nebulla | AI-Native Growth & Automation Agency" />
+        <meta name="twitter:description" content="AI workflows, brand systems, and intelligent automation — built for ambitious businesses ready to scale without adding headcount." />
+      </Helmet>
       <Header />
 
       {/* ── Hero Section ───────────────────────────────────────── */}
