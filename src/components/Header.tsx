@@ -65,14 +65,15 @@ const Header = () => {
       <div className="container mx-auto px-6">
         <div className="flex h-20 items-center justify-between">
           {/* Logo */}
-          <Link to="/" className="flex items-center gap-2 group">
+          <Link to="/" className="flex items-center gap-3 group">
             <svg
-              width="36"
-              height="36"
+              width="32"
+              height="32"
               viewBox="0 0 32 32"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
-              className="transition-transform duration-300 group-hover:scale-110"
+              className="flex-shrink-0 transition-transform duration-300 group-hover:scale-110"
+              style={{ display: "block" }}
             >
               <defs>
                 <linearGradient id="logo-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
@@ -87,10 +88,11 @@ const Header = () => {
                 fontSize="20"
                 fontWeight="900"
                 textAnchor="middle"
+                dominantBaseline="auto"
                 fill="url(#logo-gradient)"
               >N</text>
             </svg>
-            <span className="font-display text-xl font-bold tracking-wide text-foreground transition-colors duration-300 group-hover:text-primary">
+            <span className="font-display text-xl font-bold tracking-wide leading-none text-foreground transition-colors duration-300 group-hover:text-primary">
               Nebulla
             </span>
           </Link>
