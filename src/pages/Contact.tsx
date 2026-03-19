@@ -119,7 +119,7 @@ const Contact = () => {
               </Button>
             </div>
 
-            {/* WhatsApp */}
+            {/* WhatsApp — temporarily hidden until account is created
             <div className="group rounded-2xl border border-border/50 bg-card/30 p-8 backdrop-blur-sm transition-all duration-500 hover:border-primary/50 card-glow">
               <div className="mb-6 inline-flex rounded-xl bg-gradient-to-br from-primary/20 to-accent/20 p-4">
                 <MessageCircle className="h-8 w-8 text-primary" />
@@ -131,12 +131,13 @@ const Contact = () => {
                 For quicker exchanges, reach us directly on WhatsApp.
               </p>
               <Button variant="hero-outline" className="w-full" asChild>
-                <a href="#" target="_blank" rel="noopener noreferrer">
+                <a href="https://wa.me/YOURNUMBER" target="_blank" rel="noopener noreferrer">
                   Start Chat
                   <ArrowRight className="ml-2 h-4 w-4" />
                 </a>
               </Button>
             </div>
+            */}
           </div>
 
           {/* Contact Form */}
