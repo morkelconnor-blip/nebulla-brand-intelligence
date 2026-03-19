@@ -130,10 +130,8 @@ const Header = () => {
 
           {/* CTA Button */}
           <div className="hidden md:block">
-            <Button variant="hero" size="lg" asChild>
-              <Link to="/contact" className="group/btn">
-                Book a Call
-              </Link>
+            <Button variant="hero" size="lg" onClick={() => (window as any).Calendly?.initPopupWidget({ url: 'https://calendly.com/connor-nebulla/30min' })}>
+              Book a Call
             </Button>
           </div>
 
@@ -176,10 +174,8 @@ const Header = () => {
                 {link.label}
               </Link>
             ))}
-            <Button variant="hero" size="lg" className="mt-4" asChild>
-              <Link to="/contact" onClick={() => setIsOpen(false)}>
-                Book a Call
-              </Link>
+            <Button variant="hero" size="lg" className="mt-4" onClick={() => { setIsOpen(false); (window as any).Calendly?.initPopupWidget({ url: 'https://calendly.com/connor-nebulla/30min' }); }}>
+              Book a Call
             </Button>
           </nav>
         </div>

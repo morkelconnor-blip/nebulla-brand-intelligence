@@ -81,11 +81,9 @@ const Index = () => {
             </p>
 
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4 animate-fade-in-up delay-300">
-              <Button variant="hero" size="xl" asChild>
-                <Link to="/contact" className="group">
-                  Book a Strategy Call
-                  <ArrowRight className="ml-2 h-5 w-5 transition-transform duration-200 group-hover:translate-x-1" />
-                </Link>
+              <Button variant="hero" size="xl" className="group" onClick={() => (window as any).Calendly?.initPopupWidget({ url: 'https://calendly.com/connor-nebulla/30min' })}>
+                Book a Strategy Call
+                <ArrowRight className="ml-2 h-5 w-5 transition-transform duration-200 group-hover:translate-x-1" />
               </Button>
             </div>
           </div>
@@ -269,11 +267,9 @@ const Index = () => {
                   <p className="text-lg text-muted-foreground mb-8">
                     Schedule a no-obligation strategy call to explore what Nebulla can build for you.
                   </p>
-                  <Button variant="hero" size="xl" asChild>
-                    <Link to="/contact" className="group">
-                      Book a Strategy Call
-                      <ArrowRight className="ml-2 h-5 w-5 transition-transform duration-200 group-hover:translate-x-1" />
-                    </Link>
+                  <Button variant="hero" size="xl" className="group" onClick={() => (window as any).Calendly?.initPopupWidget({ url: 'https://calendly.com/connor-nebulla/30min' })}>
+                    Book a Strategy Call
+                    <ArrowRight className="ml-2 h-5 w-5 transition-transform duration-200 group-hover:translate-x-1" />
                   </Button>
                 </div>
               </div>

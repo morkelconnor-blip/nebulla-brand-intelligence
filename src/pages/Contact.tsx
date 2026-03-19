@@ -74,11 +74,9 @@ const Contact = () => {
               <p className="text-muted-foreground mb-6">
                 A focused 30-minute call to understand your goals and determine how Nebulla can help.
               </p>
-              <Button variant="hero" className="w-full" asChild>
-                <a href="#" target="_blank" rel="noopener noreferrer">
-                  Schedule Call
-                  <ArrowRight className="ml-2 h-4 w-4" />
-                </a>
+              <Button variant="hero" className="w-full" onClick={() => (window as any).Calendly?.initPopupWidget({ url: 'https://calendly.com/connor-nebulla/30min' })}>
+                Schedule Call
+                <ArrowRight className="ml-2 h-4 w-4" />
               </Button>
             </div>
 
