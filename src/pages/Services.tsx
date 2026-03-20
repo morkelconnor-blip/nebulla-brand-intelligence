@@ -141,18 +141,18 @@ const Services = () => {
     <div className="min-h-screen bg-background nebula-bg animate-page-enter">
       <Helmet>
         <title>AI Automation, Branding &amp; Web Design Services | Nebulla</title>
-        <meta name="description" content="From AI workflow automation and CRM systems to brand identity and conversion-optimised websites — Nebulla delivers done-for-you systems that replace manual execution and scale with your business." />
+        <meta name="description" content="From AI workflow automation and CRM systems to brand identity and conversion-optimised websites — done-for-you systems built to replace manual execution and scale with your business." />
         <meta name="keywords" content="AI workflow automation, branding agency, web design, CRM automation, content systems, AI agency services, business automation services, brand identity, SEO web design, intelligent operations" />
         <meta property="og:title" content="AI Automation, Branding & Web Design Services | Nebulla" />
         <meta property="og:description" content="Done-for-you systems that replace manual execution. AI workflows, brand identity, high-converting websites, and intelligent automation — built to scale." />
-        <meta property="og:image" content="https://nebulla.agency/og-image.png" />
-        <meta property="og:url" content="https://nebulla.agency/services" />
+        <meta property="og:image" content="https://www.nebulla.agency/og-image.png" />
+        <meta property="og:url" content="https://www.nebulla.agency/services" />
         <meta property="og:type" content="website" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Services | Nebulla AI Automation & Branding Agency" />
         <meta name="twitter:description" content="AI workflows, brand identity, high-converting websites, and intelligent automation — done for you and built to scale." />
-        <meta name="twitter:image" content="https://nebulla.agency/og-image.png" />
-        <link rel="canonical" href="https://nebulla.agency/services" />
+        <meta name="twitter:image" content="https://www.nebulla.agency/og-image.png" />
+        <link rel="canonical" href="https://www.nebulla.agency/services" />
       </Helmet>
       <Header />
 

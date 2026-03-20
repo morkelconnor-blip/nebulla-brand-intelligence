@@ -60,19 +60,19 @@ const Contact = () => {
   return (
     <div className="min-h-screen bg-background nebula-bg">
       <Helmet>
-        <title>Contact Nebulla | Book a Strategy Call or Send an Enquiry</title>
-        <meta name="description" content="Get in touch with Nebulla. Book a free 30-minute strategy call or send us a message — we respond to all enquiries within one business day." />
+        <title>Contact Nebulla | Start the Conversation</title>
+        <meta name="description" content="Ready to replace manual execution with automated systems? Book a free strategy call or send us a message — we respond to all enquiries within one business day." />
         <meta name="keywords" content="contact Nebulla, book a strategy call, AI agency enquiry, hire AI automation agency, brand strategy call" />
-        <meta property="og:title" content="Contact Nebulla | Book a Strategy Call" />
-        <meta property="og:description" content="Book a free 30-minute strategy call or send us a message. We respond to all enquiries within one business day." />
-        <meta property="og:image" content="https://nebulla.agency/og-image.png" />
-        <meta property="og:url" content="https://nebulla.agency/contact" />
+        <meta property="og:title" content="Contact Nebulla | Start the Conversation" />
+        <meta property="og:description" content="Book a free strategy call or send us a message. We respond to all enquiries within one business day." />
+        <meta property="og:image" content="https://www.nebulla.agency/og-image.png" />
+        <meta property="og:url" content="https://www.nebulla.agency/contact" />
         <meta property="og:type" content="website" />
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Contact Nebulla | Book a Strategy Call" />
+        <meta name="twitter:title" content="Contact Nebulla | Start the Conversation" />
         <meta name="twitter:description" content="Book a free strategy call or send an enquiry — Nebulla responds within one business day." />
-        <meta name="twitter:image" content="https://nebulla.agency/og-image.png" />
-        <link rel="canonical" href="https://nebulla.agency/contact" />
+        <meta name="twitter:image" content="https://www.nebulla.agency/og-image.png" />
+        <link rel="canonical" href="https://www.nebulla.agency/contact" />
       </Helmet>
       <Header />
       

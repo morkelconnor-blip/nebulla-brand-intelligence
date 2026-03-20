@@ -46,19 +46,19 @@ const NebullaOS = () => {
   return (
     <div className="min-h-screen bg-background nebula-bg">
       <Helmet>
-        <title>NebullaOS | The Intelligence Platform Behind Every Nebulla System</title>
-        <meta name="description" content="NebullaOS is Nebulla's proprietary operating platform — unified AI agents, real-time analytics, automated reporting, and performance intelligence in one dashboard. Built by delivering real systems first." />
+        <title>NebullaOS | AI Intelligence Platform for Modern Business</title>
+        <meta name="description" content="NebullaOS is Nebulla's proprietary operating platform — unified AI agents, real-time analytics, automated reporting, and performance intelligence in one dashboard." />
         <meta name="keywords" content="NebullaOS, AI operating system, business intelligence platform, AI dashboard, automated reporting, real-time analytics, AI agents, workflow intelligence platform" />
-        <meta property="og:title" content="NebullaOS | AI Intelligence Platform for Modern Businesses" />
+        <meta property="og:title" content="NebullaOS | AI Intelligence Platform for Modern Business" />
         <meta property="og:description" content="Real-time analytics, AI content generation, automated reporting, and performance tracking — unified in one proprietary platform. Coming soon." />
-        <meta property="og:image" content="https://nebulla.agency/og-image.png" />
-        <meta property="og:url" content="https://nebulla.agency/nebullaos" />
+        <meta property="og:image" content="https://www.nebulla.agency/og-image.png" />
+        <meta property="og:url" content="https://www.nebulla.agency/nebullaos" />
         <meta property="og:type" content="website" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="NebullaOS | AI Intelligence Platform by Nebulla" />
         <meta name="twitter:description" content="Unified AI agents, real-time analytics, and automated reporting — all in one proprietary platform. Coming soon." />
-        <meta name="twitter:image" content="https://nebulla.agency/og-image.png" />
-        <link rel="canonical" href="https://nebulla.agency/nebullaos" />
+        <meta name="twitter:image" content="https://www.nebulla.agency/og-image.png" />
+        <link rel="canonical" href="https://www.nebulla.agency/nebullaos" />
       </Helmet>
       <Header />
       

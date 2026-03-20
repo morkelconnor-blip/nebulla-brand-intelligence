@@ -31,19 +31,19 @@ const About = () => {
   return (
     <div className="min-h-screen bg-background nebula-bg animate-page-enter">
       <Helmet>
-        <title>About Nebulla | The AI-Native Agency Built for How Business Actually Scales</title>
-        <meta name="description" content="Nebulla was built to close the gap between creative output and the intelligent systems businesses depend on to grow. We design, deploy, and continuously optimise AI-driven systems for ambitious companies worldwide." />
+        <title>About Nebulla | AI-Native Agency Built for How Business Scales</title>
+        <meta name="description" content="Nebulla was built to close the gap between creative output and the intelligent systems global businesses depend on to grow. We design, deploy, and continuously optimise AI-driven systems." />
         <meta name="keywords" content="about Nebulla, AI-native agency, AI operations agency, intelligent automation company, brand and automation agency, AI systems for business, growth and operations agency" />
-        <meta property="og:title" content="About Nebulla | The AI-Native Agency Built for How Business Actually Scales" />
+        <meta property="og:title" content="About Nebulla | AI-Native Agency Built for How Business Scales" />
         <meta property="og:description" content="We believe the most competitive businesses aren't just well-designed — they're well-engineered. Nebulla builds the systems behind the brand." />
-        <meta property="og:image" content="https://nebulla.agency/og-image.png" />
-        <meta property="og:url" content="https://nebulla.agency/about" />
+        <meta property="og:image" content="https://www.nebulla.agency/og-image.png" />
+        <meta property="og:url" content="https://www.nebulla.agency/about" />
         <meta property="og:type" content="website" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="About Nebulla | AI-Native Agency Built to Scale" />
         <meta name="twitter:description" content="We build the systems behind ambitious brands — strategy, design, and automation engineered for global growth." />
-        <meta name="twitter:image" content="https://nebulla.agency/og-image.png" />
-        <link rel="canonical" href="https://nebulla.agency/about" />
+        <meta name="twitter:image" content="https://www.nebulla.agency/og-image.png" />
+        <link rel="canonical" href="https://www.nebulla.agency/about" />
       </Helmet>
       <Header />
 

@@ -14,4 +14,4 @@ User-agent: *
 Allow: /
 Disallow: /404
 
-Sitemap: https://nebulla.agency/sitemap.xml
+Sitemap: https://www.nebulla.agency/sitemap.xml
