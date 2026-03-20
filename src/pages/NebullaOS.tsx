@@ -51,13 +51,13 @@ const NebullaOS = () => {
         <meta name="keywords" content="NebullaOS, AI operating system, business intelligence platform, AI dashboard, automated reporting, real-time analytics, AI agents, workflow intelligence platform" />
         <meta property="og:title" content="NebullaOS | AI Intelligence Platform for Modern Businesses" />
         <meta property="og:description" content="Real-time analytics, AI content generation, automated reporting, and performance tracking — unified in one proprietary platform. Coming soon." />
-        <meta property="og:image" content="https://nebulla.agency/logo.png" />
+        <meta property="og:image" content="https://nebulla.agency/og-image.png" />
         <meta property="og:url" content="https://nebulla.agency/nebullaos" />
         <meta property="og:type" content="website" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="NebullaOS | AI Intelligence Platform by Nebulla" />
         <meta name="twitter:description" content="Unified AI agents, real-time analytics, and automated reporting — all in one proprietary platform. Coming soon." />
-        <meta name="twitter:image" content="https://nebulla.agency/logo.png" />
+        <meta name="twitter:image" content="https://nebulla.agency/og-image.png" />
         <link rel="canonical" href="https://nebulla.agency/nebullaos" />
       </Helmet>
       <Header />

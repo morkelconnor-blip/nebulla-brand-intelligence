@@ -36,13 +36,13 @@ const About = () => {
         <meta name="keywords" content="about Nebulla, AI-native agency, AI operations agency, intelligent automation company, brand and automation agency, AI systems for business, growth and operations agency" />
         <meta property="og:title" content="About Nebulla | The AI-Native Agency Built for How Business Actually Scales" />
         <meta property="og:description" content="We believe the most competitive businesses aren't just well-designed — they're well-engineered. Nebulla builds the systems behind the brand." />
-        <meta property="og:image" content="https://nebulla.agency/logo.png" />
+        <meta property="og:image" content="https://nebulla.agency/og-image.png" />
         <meta property="og:url" content="https://nebulla.agency/about" />
         <meta property="og:type" content="website" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="About Nebulla | AI-Native Agency Built to Scale" />
         <meta name="twitter:description" content="We build the systems behind ambitious brands — strategy, design, and automation engineered for global growth." />
-        <meta name="twitter:image" content="https://nebulla.agency/logo.png" />
+        <meta name="twitter:image" content="https://nebulla.agency/og-image.png" />
         <link rel="canonical" href="https://nebulla.agency/about" />
       </Helmet>
       <Header />

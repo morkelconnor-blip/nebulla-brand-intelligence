@@ -60,13 +60,13 @@ const Index = () => {
         <meta name="keywords" content="AI agency, AI automation agency, growth agency, AI-native agency, workflow automation, brand strategy, web design agency, CRM automation, AI workflows, NebullaOS, intelligent automation, business automation" />
         <meta property="og:title" content="Nebulla | AI-Native Growth & Automation Agency for Ambitious Businesses" />
         <meta property="og:description" content="We replace manual execution with automated systems. AI workflows, brand infrastructure, and intelligent operations for businesses built to scale globally." />
-        <meta property="og:image" content="https://nebulla.agency/logo.png" />
+        <meta property="og:image" content="https://nebulla.agency/og-image.png" />
         <meta property="og:url" content="https://nebulla.agency/" />
         <meta property="og:type" content="website" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Nebulla | AI-Native Growth & Automation Agency" />
         <meta name="twitter:description" content="AI workflows, brand systems, and intelligent automation — built for ambitious businesses ready to scale without adding headcount." />
-        <meta name="twitter:image" content="https://nebulla.agency/logo.png" />
+        <meta name="twitter:image" content="https://nebulla.agency/og-image.png" />
         <link rel="canonical" href="https://nebulla.agency/" />
       </Helmet>
       <Header />

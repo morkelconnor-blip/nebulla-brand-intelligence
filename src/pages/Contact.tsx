@@ -65,13 +65,13 @@ const Contact = () => {
         <meta name="keywords" content="contact Nebulla, book a strategy call, AI agency enquiry, hire AI automation agency, brand strategy call" />
         <meta property="og:title" content="Contact Nebulla | Book a Strategy Call" />
         <meta property="og:description" content="Book a free 30-minute strategy call or send us a message. We respond to all enquiries within one business day." />
-        <meta property="og:image" content="https://nebulla.agency/logo.png" />
+        <meta property="og:image" content="https://nebulla.agency/og-image.png" />
         <meta property="og:url" content="https://nebulla.agency/contact" />
         <meta property="og:type" content="website" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Contact Nebulla | Book a Strategy Call" />
         <meta name="twitter:description" content="Book a free strategy call or send an enquiry — Nebulla responds within one business day." />
-        <meta name="twitter:image" content="https://nebulla.agency/logo.png" />
+        <meta name="twitter:image" content="https://nebulla.agency/og-image.png" />
         <link rel="canonical" href="https://nebulla.agency/contact" />
       </Helmet>
       <Header />
