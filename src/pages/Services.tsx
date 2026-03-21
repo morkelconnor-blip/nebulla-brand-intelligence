@@ -26,6 +26,7 @@ const services = [
   {
     icon: Palette,
     title: "Branding & Identity",
+    href: "/services/branding-identity",
     description: "A complete brand identity — visual system, tone of voice, and strategic positioning — engineered to communicate authority in any market.",
     features: [
       { icon: Sparkles,     text: "Visual identity design" },
@@ -37,6 +38,7 @@ const services = [
   {
     icon: Code,
     title: "Websites & Digital Presence",
+    href: "/services/websites-seo",
     description: "High-performance websites built to convert. Designed with clarity, developed for speed, and optimised for search from the ground up.",
     features: [
       { icon: Palette,   text: "Web design (Framer/Webflow style)" },
@@ -48,6 +50,7 @@ const services = [
   {
     icon: PenTool,
     title: "Content & Social Systems",
+    href: "/services/content-social",
     description: "Structured content systems powered by AI — built to keep your brand visible, consistent, and commercially relevant across every channel.",
     features: [
       { icon: PenTool,  text: "Monthly social content" },
@@ -59,6 +62,7 @@ const services = [
   {
     icon: Zap,
     title: "Automation & Intelligence",
+    href: "/services/automation-intelligence",
     description: "Custom AI workflows and intelligent infrastructure that reduce operational friction and allow your team to focus on decisions, not administration.",
     features: [
       { icon: Bot,       text: "AI workflows & automations" },
@@ -103,9 +107,15 @@ function ServiceRow({ service, index }: { service: typeof services[0]; index: nu
           <h2 className="font-display text-2xl font-bold text-foreground md:text-3xl mb-4">
             {service.title}
           </h2>
-          <p className="text-lg text-muted-foreground leading-relaxed">
+          <p className="text-lg text-muted-foreground leading-relaxed mb-6">
             {service.description}
           </p>
+          <Link
+            to={service.href}
+            className="inline-flex items-center gap-2 text-primary font-medium hover:underline transition-colors"
+          >
+            Learn More <ArrowRight className="h-4 w-4" />
+          </Link>
         </div>
 
         {/* Right: feature badges */}

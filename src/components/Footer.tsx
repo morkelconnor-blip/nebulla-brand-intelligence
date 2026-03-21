@@ -11,7 +11,7 @@ const Footer = () => {
               <img src="/favicon.svg" alt="Nebulla" className="h-8 w-8" />
             </Link>
             <p className="text-sm text-muted-foreground max-w-xs">
-              Brand strategy, design, and intelligent automation for companies with global ambitions.
+              Architecting the digital future for high-performance brands. Built for the Nocturnal Architect.
             </p>
           </div>
 
@@ -30,10 +30,10 @@ const Footer = () => {
           <div className="space-y-4">
             <h4 className="font-display font-semibold text-foreground">Services</h4>
             <nav className="flex flex-col gap-2">
-              <span className="text-sm text-muted-foreground">Branding & Identity</span>
-              <span className="text-sm text-muted-foreground">Websites & SEO</span>
-              <span className="text-sm text-muted-foreground">Content Systems</span>
-              <span className="text-sm text-muted-foreground">Automation</span>
+              <Link to="/services/branding-identity" className="text-sm text-muted-foreground hover:text-primary transition-colors">Branding & Identity</Link>
+              <Link to="/services/websites-seo" className="text-sm text-muted-foreground hover:text-primary transition-colors">Websites & SEO</Link>
+              <Link to="/services/content-social" className="text-sm text-muted-foreground hover:text-primary transition-colors">Content Systems</Link>
+              <Link to="/services/automation-intelligence" className="text-sm text-muted-foreground hover:text-primary transition-colors">Automation</Link>
             </nav>
           </div>
 
