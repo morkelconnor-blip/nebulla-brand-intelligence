@@ -109,7 +109,7 @@ function ServiceRow({ service, index }: { service: typeof services[0]; index: nu
         </div>
 
         {/* Right: feature badges */}
-        <div className="grid grid-cols-2 gap-4">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
           {service.features.map((feature, j) => (
             <div
               key={j}
@@ -175,7 +175,7 @@ const Services = () => {
       {/* ── Services Grid ──────────────────────────────────────── */}
       <section className="py-12 md:py-20">
         <div className="container mx-auto px-6">
-          <div className="space-y-16">
+          <div className="space-y-8 md:space-y-16">
             {services.map((service, i) => (
               <ServiceRow key={i} service={service} index={i} />
             ))}

@@ -83,7 +83,7 @@ const Index = () => {
           <div className="mx-auto max-w-4xl text-center">
             <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-border/50 bg-card/50 px-4 py-2 backdrop-blur-sm animate-fade-in-up">
               <Sparkles className="h-4 w-4 text-primary animate-spin-slow" />
-              <span className="text-sm text-muted-foreground">Where Strategy Meets Intelligent Execution</span>
+              <span className="text-xs md:text-sm text-muted-foreground">Where Strategy Meets Intelligent Execution</span>
             </div>
 
             <h1 className="mb-6 font-display text-4xl font-bold tracking-tight text-foreground md:text-6xl lg:text-7xl animate-fade-in-up delay-100">

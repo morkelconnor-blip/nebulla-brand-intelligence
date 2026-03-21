@@ -3,8 +3,8 @@ import { Link } from "react-router-dom";
 const Footer = () => {
   return (
     <footer className="border-t border-border/50 bg-nebula-dark">
-      <div className="container mx-auto px-6 py-16">
-        <div className="grid gap-12 md:grid-cols-4">
+      <div className="container mx-auto px-6 py-10 md:py-16">
+        <div className="grid gap-8 md:gap-12 md:grid-cols-4">
           {/* Brand */}
           <div className="space-y-4">
             <Link to="/" className="flex items-center gap-2">
@@ -60,7 +60,7 @@ const Footer = () => {
         </div>
 
         {/* Bottom */}
-        <div className="mt-16 flex flex-col items-center justify-between gap-4 border-t border-border/50 pt-8 md:flex-row">
+        <div className="mt-8 md:mt-16 flex flex-col items-center justify-between gap-4 border-t border-border/50 pt-8 md:flex-row">
           <p className="text-sm text-muted-foreground">
             © {new Date().getFullYear()} Nebulla. All rights reserved.
           </p>
