@@ -20,7 +20,7 @@ import {
 import { useToast } from "@/hooks/use-toast";
 
 // Replace NEBULLAOS_FORM_ID with your Formspree form ID (create one at formspree.io)
-const FORMSPREE_ENDPOINT = "https://formspree.io/f/NEBULLAOS_FORM_ID";
+const FORMSPREE_ENDPOINT = "https://formspree.io/f/mbdzedrq";
 
 const NebullaOS = () => {
   const [email, setEmail] = useState("");
