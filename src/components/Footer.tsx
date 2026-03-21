@@ -65,8 +65,8 @@ const Footer = () => {
             © {new Date().getFullYear()} Nebulla. All rights reserved.
           </p>
           <div className="flex gap-6">
-            <a href="#" className="text-sm text-muted-foreground hover:text-primary transition-colors">Privacy Policy</a>
-            <a href="#" className="text-sm text-muted-foreground hover:text-primary transition-colors">Terms of Service</a>
+            <Link to="/privacy-policy" className="text-sm text-muted-foreground hover:text-primary transition-colors">Privacy Policy</Link>
+            <Link to="/terms-of-service" className="text-sm text-muted-foreground hover:text-primary transition-colors">Terms of Service</Link>
           </div>
         </div>
       </div>

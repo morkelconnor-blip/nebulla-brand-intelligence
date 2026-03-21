@@ -19,18 +19,41 @@ import {
 } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
 
+// Replace NEBULLAOS_FORM_ID with your Formspree form ID (create one at formspree.io)
+const FORMSPREE_ENDPOINT = "https://formspree.io/f/NEBULLAOS_FORM_ID";
+
 const NebullaOS = () => {
   const [email, setEmail] = useState("");
+  const [isSubmitting, setIsSubmitting] = useState(false);
   const { toast } = useToast();
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    if (email) {
-      toast({
-        title: "You're on the list!",
-        description: "We'll notify you when NebullaOS launches.",
+    if (!email) return;
+    setIsSubmitting(true);
+    try {
+      const res = await fetch(FORMSPREE_ENDPOINT, {
+        method: "POST",
+        headers: { "Content-Type": "application/json", Accept: "application/json" },
+        body: JSON.stringify({ email }),
       });
-      setEmail("");
+      if (res.ok) {
+        toast({
+          title: "You're on the list!",
+          description: "We'll notify you when NebullaOS launches.",
+        });
+        setEmail("");
+      } else {
+        throw new Error("Submission failed");
+      }
+    } catch {
+      toast({
+        title: "Something went wrong",
+        description: "Please try again or email us at hello@nebulla.agency",
+        variant: "destructive",
+      });
+    } finally {
+      setIsSubmitting(false);
     }
   };
 
@@ -100,9 +123,9 @@ const NebullaOS = () => {
                   className="h-14 bg-card/50 border-border/50 text-foreground placeholder:text-muted-foreground"
                   required
                 />
-                <Button variant="hero" size="xl" type="submit">
-                  Join Waitlist
-                  <ArrowRight className="ml-2 h-4 w-4" />
+                <Button variant="hero" size="xl" type="submit" disabled={isSubmitting}>
+                  {isSubmitting ? "Joining..." : "Join Waitlist"}
+                  {!isSubmitting && <ArrowRight className="ml-2 h-4 w-4" />}
                 </Button>
               </div>
             </form>
@@ -239,8 +262,8 @@ const NebullaOS = () => {
                       className="h-14 bg-card/50 border-border/50 text-foreground placeholder:text-muted-foreground"
                       required
                     />
-                    <Button variant="hero" size="xl" type="submit">
-                      Join Waitlist
+                    <Button variant="hero" size="xl" type="submit" disabled={isSubmitting}>
+                      {isSubmitting ? "Joining..." : "Join Waitlist"}
                     </Button>
                   </div>
                 </form>

@@ -15,6 +15,8 @@ import BrandingIdentity from "./pages/services/BrandingIdentity";
 import WebsitesSEO from "./pages/services/WebsitesSEO";
 import ContentSocial from "./pages/services/ContentSocial";
 import AutomationIntelligence from "./pages/services/AutomationIntelligence";
+import PrivacyPolicy from "./pages/PrivacyPolicy";
+import TermsOfService from "./pages/TermsOfService";
 
 const queryClient = new QueryClient();
 
@@ -44,6 +46,8 @@ const App = () => (
           <Route path="/services/automation-intelligence" element={<AutomationIntelligence />} />
           <Route path="/nebullaos" element={<NebullaOS />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+          <Route path="/terms-of-service" element={<TermsOfService />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>

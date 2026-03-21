@@ -21,6 +21,7 @@ const problems = [
   "Decision-makers lack real-time visibility into business performance",
   "Scaling means hiring more people to do the same repetitive work",
   "AI feels like it could help but nobody knows where to start without wasting budget",
+  "No clear link between marketing activity and actual revenue outcomes",
 ];
 
 const deliverables = [
