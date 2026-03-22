@@ -57,6 +57,11 @@ export default {
           dark: "hsl(var(--nebula-dark))",
           surface: "hsl(var(--nebula-surface))",
         },
+        nocturnal: {
+          base: '#0a0f1e',
+          surface: '#0f1629',
+          card: '#141d35',
+        },
         sidebar: {
           DEFAULT: "hsl(var(--sidebar-background))",
           foreground: "hsl(var(--sidebar-foreground))",

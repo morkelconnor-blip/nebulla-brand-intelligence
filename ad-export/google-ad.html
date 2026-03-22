@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    width: 1920px;
+    height: 1080px;
+    overflow: hidden;
+    background: #0a0714;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Arial Black', Arial, sans-serif;
+  }
+
+  .bg {
+    position: absolute;
+    inset: 0;
+    background:
+      radial-gradient(ellipse 80% 60% at 50% 40%, rgba(100, 40, 180, 0.45) 0%, transparent 70%),
+      radial-gradient(ellipse 40% 40% at 20% 80%, rgba(60, 20, 120, 0.3) 0%, transparent 60%),
+      radial-gradient(ellipse 40% 40% at 80% 20%, rgba(30, 10, 80, 0.3) 0%, transparent 60%),
+      #0a0714;
+  }
+
+  .content {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    max-width: 1400px;
+    padding: 0 80px;
+  }
+
+  h1 {
+    font-size: 115px;
+    font-weight: 900;
+    line-height: 1.05;
+    color: #ffffff;
+    letter-spacing: -3px;
+    margin-bottom: 30px;
+  }
+
+  .gradient-text {
+    background: linear-gradient(90deg, #7c3aed, #38bdf8);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  p {
+    font-size: 32px;
+    font-weight: 400;
+    color: rgba(255,255,255,0.55);
+    line-height: 1.6;
+    font-family: Arial, sans-serif;
+    max-width: 900px;
+    margin: 0 auto 45px;
+    letter-spacing: 0.2px;
+  }
+
+  .logo {
+    position: absolute;
+    top: 50px;
+    left: 70px;
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    z-index: 3;
+  }
+
+  .logo-icon {
+    width: 58px;
+    height: 58px;
+    border-radius: 14px;
+    background: linear-gradient(135deg, #7c3aed, #38bdf8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 32px;
+    font-weight: 900;
+    color: white;
+    font-family: 'Arial Black', Arial, sans-serif;
+  }
+
+  .logo-text {
+    font-size: 30px;
+    font-weight: 700;
+    color: white;
+    font-family: Arial, sans-serif;
+    letter-spacing: 0.5px;
+  }
+
+  .domain {
+    position: absolute;
+    bottom: 50px;
+    right: 70px;
+    font-size: 24px;
+    color: rgba(255,255,255,0.35);
+    font-family: Arial, sans-serif;
+    letter-spacing: 0.5px;
+    z-index: 3;
+  }
+
+  .cta {
+    display: inline-block;
+    background: linear-gradient(135deg, #7c3aed, #38bdf8);
+    color: white;
+    font-size: 28px;
+    font-weight: 700;
+    padding: 22px 60px;
+    border-radius: 50px;
+    font-family: Arial, sans-serif;
+    letter-spacing: 0.3px;
+  }
+</style>
+</head>
+<body>
+  <div class="bg"></div>
+
+  <div class="content">
+    <h1>Brands Built to <span class="gradient-text">Compete.</span><br>Anywhere.</h1>
+    <p>AI workflows, brand infrastructure, and intelligent automation<br>for businesses built to scale globally.</p>
+  </div>
+</body>
+</html>

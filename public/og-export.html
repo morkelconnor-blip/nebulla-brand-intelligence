@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8"/>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body {
+    width: 1200px;
+    height: 630px;
+    overflow: hidden;
+    background: #0d0a1a;
+  }
+  body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Arial Black', Arial, sans-serif;
+    position: relative;
+    text-align: center;
+  }
+  .bg-glow-left {
+    position: absolute;
+    width: 600px; height: 600px;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(124,58,237,0.4) 0%, transparent 65%);
+    top: -180px; left: -180px;
+    pointer-events: none;
+  }
+  .bg-glow-right {
+    position: absolute;
+    width: 500px; height: 500px;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(56,189,248,0.18) 0%, transparent 65%);
+    bottom: -150px; right: -100px;
+    pointer-events: none;
+  }
+  .content {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    width: 100%;
+    padding: 0 100px;
+  }
+  h1 {
+    font-size: 100px;
+    font-weight: 900;
+    color: #ffffff;
+    line-height: 1.05;
+    letter-spacing: -3px;
+    margin-bottom: 28px;
+    text-align: center;
+  }
+  .gradient-text {
+    background: linear-gradient(135deg, #7c3aed 0%, #38bdf8 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+  p {
+    font-size: 22px;
+    font-weight: 400;
+    color: rgba(255,255,255,0.5);
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    text-align: center;
+  }
+  .domain {
+    position: absolute;
+    bottom: 28px;
+    right: 40px;
+    font-size: 16px;
+    font-weight: 600;
+    color: rgba(255,255,255,0.35);
+    font-family: Arial, sans-serif;
+    letter-spacing: 1.5px;
+    z-index: 3;
+  }
+</style>
+</head>
+<body>
+  <div class="bg-glow-left"></div>
+  <div class="bg-glow-right"></div>
+  <div class="content">
+    <h1>Brands Built to <span class="gradient-text">Compete.</span><br>Anywhere.</h1>
+    <p>AI workflows, brand infrastructure, and intelligent automation<br>for businesses built to scale globally.</p>
+  </div>
+  <span class="domain">nebulla.agency</span>
+</body>
+</html>

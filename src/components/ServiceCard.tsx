@@ -8,20 +8,17 @@ interface ServiceCardProps {
 
 const ServiceCard = ({ icon: Icon, title, description }: ServiceCardProps) => {
   return (
-    <div className="group relative h-full rounded-2xl border border-border/50 bg-card/50 p-8 backdrop-blur-sm transition-all duration-500 hover:border-primary/50 hover:-translate-y-1 hover:shadow-[0_20px_60px_hsl(var(--primary)/0.15)]">
-      {/* Hover glow overlay */}
-      <div className="absolute inset-0 rounded-2xl bg-gradient-to-br from-primary/5 to-accent/5 opacity-0 transition-opacity duration-500 group-hover:opacity-100" />
-
+    <div className="group relative h-full border border-slate-800 bg-slate-900/40 rounded-2xl p-6 transition-all duration-300 hover:border-slate-700 hover:-translate-y-1">
       <div className="relative">
-        <div className="mb-6 inline-flex rounded-xl bg-gradient-to-br from-primary/20 to-accent/20 p-3 transition-transform duration-300 group-hover:scale-110">
-          <Icon className="h-6 w-6 text-primary" />
+        <div className="mb-6 inline-flex bg-slate-800/60 rounded-xl p-3">
+          <Icon className="h-6 w-6 text-slate-400 group-hover:text-blue-400 transition-colors duration-300" />
         </div>
 
-        <h3 className="mb-3 font-display text-xl font-semibold text-foreground">
+        <h3 className="mb-3 font-display text-xl font-semibold text-slate-100">
           {title}
         </h3>
 
-        <p className="text-muted-foreground leading-relaxed">
+        <p className="text-slate-400 leading-relaxed">
           {description}
         </p>
       </div>

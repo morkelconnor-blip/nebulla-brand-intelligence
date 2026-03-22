@@ -1,14 +1,13 @@
 import { useState } from "react";
-import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { Helmet } from "react-helmet-async";
-import { 
-  BarChart3, 
-  Bot, 
-  Zap, 
-  Globe, 
+import {
+  BarChart3,
+  Bot,
+  Zap,
+  Globe,
   LineChart,
   Bell,
   FileText,
@@ -19,7 +18,6 @@ import {
 } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
 
-// Replace NEBULLAOS_FORM_ID with your Formspree form ID (create one at formspree.io)
 const FORMSPREE_ENDPOINT = "https://formspree.io/f/mbdzedrq";
 
 const NebullaOS = () => {
@@ -67,7 +65,7 @@ const NebullaOS = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-background nebula-bg">
+    <div className="min-h-screen bg-[#111620] nocturnal-bg">
       <Helmet>
         <title>NebullaOS | AI Intelligence Platform for Modern Business</title>
         <meta name="description" content="NebullaOS is Nebulla's proprietary operating platform — unified AI agents, real-time analytics, automated reporting, and performance intelligence in one dashboard." />
@@ -84,34 +82,34 @@ const NebullaOS = () => {
         <link rel="canonical" href="https://www.nebulla.agency/nebullaos" />
       </Helmet>
       <Header />
-      
+
       {/* Hero */}
       <section className="relative pt-24 pb-12 md:pt-32 md:pb-20 overflow-hidden">
-        <div className="absolute inset-0 overflow-hidden">
-          <div className="absolute top-1/4 left-1/3 h-[500px] w-[500px] rounded-full bg-primary/15 blur-3xl animate-pulse-glow" />
-          <div className="absolute bottom-1/4 right-1/3 h-[500px] w-[500px] rounded-full bg-accent/15 blur-3xl animate-pulse-glow delay-500" />
+        <div className="absolute inset-0 overflow-hidden pointer-events-none">
+          <div className="absolute top-1/4 left-1/3 h-[500px] w-[500px] rounded-full opacity-15" style={{ background: 'radial-gradient(ellipse, rgba(46,144,250,0.2) 0%, transparent 70%)' }} />
+          <div className="absolute bottom-1/4 right-1/3 h-[500px] w-[500px] rounded-full opacity-15" style={{ background: 'radial-gradient(ellipse, rgba(158,119,237,0.2) 0%, transparent 70%)' }} />
         </div>
-        
+
         <div className="container relative mx-auto px-6">
           <div className="mx-auto max-w-4xl text-center">
-            <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-primary/30 bg-primary/10 px-4 py-2 animate-fade-in-up">
-              <Sparkles className="h-4 w-4 text-primary" />
-              <span className="text-sm text-primary font-medium">Launching Soon</span>
+            <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-blue-500/30 bg-blue-500/10 px-4 py-2 animate-fade-in-up">
+              <Sparkles className="h-4 w-4 text-blue-400" />
+              <span className="text-sm text-blue-400 font-medium">Launching Soon</span>
             </div>
-            
-            <h1 className="mb-6 font-display text-4xl font-bold tracking-tight text-foreground md:text-5xl lg:text-6xl animate-fade-in-up delay-100">
+
+            <h1 className="mb-6 font-display text-4xl font-bold tracking-tighter text-slate-100 md:text-5xl lg:text-6xl animate-fade-in-up delay-100">
               Introducing{" "}
-              <span className="gradient-text">NebullaOS</span>
+              <span style={{ color: '#2E90FA', textShadow: '0 0 20px rgba(46, 144, 250, 0.5)' }}>NebullaOS</span>
             </h1>
-            
-            <p className="mb-4 text-xl text-muted-foreground md:text-2xl max-w-3xl mx-auto animate-fade-in-up delay-200">
+
+            <p className="mb-4 text-xl text-slate-400 md:text-2xl max-w-3xl mx-auto animate-fade-in-up delay-200">
               The Operating System for Brand Intelligence
             </p>
 
-            <p className="mb-10 text-lg text-muted-foreground max-w-2xl mx-auto animate-fade-in-up delay-300">
+            <p className="mb-10 text-lg text-slate-400 max-w-2xl mx-auto animate-fade-in-up delay-300">
               A unified platform that brings together AI automation, real-time analytics, content workflows, and performance reporting — so your brand operates smarter at every level.
             </p>
-            
+
             {/* Waitlist Form */}
             <form onSubmit={handleSubmit} className="mx-auto max-w-md animate-fade-in-up delay-400">
               <div className="flex flex-col sm:flex-row gap-3">
@@ -120,13 +118,17 @@ const NebullaOS = () => {
                   placeholder="Enter your email"
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
-                  className="h-14 bg-card/50 border-border/50 text-foreground placeholder:text-muted-foreground"
+                  className="h-14 bg-slate-900 border-slate-800 text-slate-100 placeholder:text-slate-400 focus:border-blue-400"
                   required
                 />
-                <Button variant="hero" size="xl" type="submit" disabled={isSubmitting}>
+                <button
+                  type="submit"
+                  disabled={isSubmitting}
+                  className="inline-flex items-center justify-center gap-2 bg-blue-600 hover:bg-blue-500 text-white font-semibold rounded-xl px-6 py-3 transition-colors duration-200 whitespace-nowrap disabled:opacity-60"
+                >
                   {isSubmitting ? "Joining..." : "Join Waitlist"}
-                  {!isSubmitting && <ArrowRight className="ml-2 h-4 w-4" />}
-                </Button>
+                  {!isSubmitting && <ArrowRight className="h-4 w-4" />}
+                </button>
               </div>
             </form>
           </div>
@@ -134,30 +136,30 @@ const NebullaOS = () => {
       </section>
 
       {/* Features Grid */}
-      <section className="py-12 md:py-20">
+      <section className="py-12 md:py-20 border-t border-slate-800/50">
         <div className="container mx-auto px-6">
           <div className="text-center mb-10">
-            <h2 className="font-display text-3xl font-bold text-foreground md:text-4xl mb-4">
+            <h2 className="font-display text-3xl font-bold text-slate-100 md:text-4xl mb-4">
               One Platform. Complete Visibility.
             </h2>
-            <p className="text-muted-foreground max-w-2xl mx-auto">
+            <p className="text-slate-400 max-w-2xl mx-auto">
               NebullaOS consolidates the tools your team relies on into a single, intelligent platform.
             </p>
           </div>
-          
+
           <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
             {features.map((feature, i) => (
-              <div 
+              <div
                 key={i}
-                className="group rounded-2xl border border-border/50 bg-card/30 p-8 backdrop-blur-sm transition-all duration-500 hover:border-primary/50 card-glow"
+                className="group border border-slate-800 bg-slate-900/40 rounded-2xl p-6 transition-all duration-300 hover:border-slate-700 hover:-translate-y-1"
               >
-                <div className="mb-6 inline-flex rounded-xl bg-gradient-to-br from-primary/20 to-accent/20 p-3">
-                  <feature.icon className="h-6 w-6 text-primary" />
+                <div className="mb-6 inline-flex bg-slate-800/60 rounded-xl p-3">
+                  <feature.icon className="h-6 w-6 text-slate-400 group-hover:text-blue-400 transition-colors duration-300" />
                 </div>
-                <h3 className="mb-3 font-display text-xl font-semibold text-foreground">
+                <h3 className="mb-3 font-display text-xl font-semibold text-slate-100">
                   {feature.title}
                 </h3>
-                <p className="text-muted-foreground">
+                <p className="text-slate-400">
                   {feature.description}
                 </p>
               </div>
@@ -167,18 +169,16 @@ const NebullaOS = () => {
       </section>
 
       {/* Dashboard Preview */}
-      <section className="py-12 md:py-20 relative">
-        <div className="absolute inset-0 bg-gradient-to-b from-transparent via-nebula-surface/30 to-transparent" />
-        
+      <section className="py-12 md:py-20 bg-slate-900/20 border-t border-slate-800/50 relative">
         <div className="container relative mx-auto px-6">
           <div className="grid gap-16 lg:grid-cols-2 items-center">
             <div>
-              <h2 className="font-display text-3xl font-bold text-foreground md:text-4xl mb-6">
+              <h2 className="font-display text-3xl font-bold tracking-tighter text-slate-100 md:text-4xl mb-6">
                 Your Brand's{" "}
-                <span className="gradient-text">Command Center</span>
+                <span style={{ color: '#2E90FA', textShadow: '0 0 20px rgba(46, 144, 250, 0.5)' }}>Command Center</span>
               </h2>
-              
-              <p className="text-lg text-muted-foreground mb-8 leading-relaxed">
+
+              <p className="text-lg text-slate-400 mb-8 leading-relaxed">
                 NebullaOS consolidates your brand's performance data, content pipeline, and automation workflows into one platform — giving you complete visibility and control.
               </p>
 
@@ -191,83 +191,154 @@ const NebullaOS = () => {
                   "Built-in collaboration tools for distributed teams"
                 ].map((item, i) => (
                   <div key={i} className="flex items-center gap-3">
-                    <CheckCircle className="h-5 w-5 text-primary flex-shrink-0" />
-                    <span className="text-foreground">{item}</span>
+                    <CheckCircle className="h-5 w-5 text-blue-400 flex-shrink-0" />
+                    <span className="text-slate-100">{item}</span>
                   </div>
                 ))}
               </div>
             </div>
-            
+
+            {/* Dashboard Mockup */}
             <div className="relative">
-              <div className="aspect-[4/3] rounded-2xl border border-border/50 bg-card/30 p-6 backdrop-blur-sm card-glow overflow-hidden">
-                {/* Mock Dashboard UI */}
-                <div className="h-full w-full rounded-xl bg-gradient-to-br from-nebula-surface to-background p-4">
-                  <div className="grid grid-cols-3 gap-3 mb-4">
-                    {[1, 2, 3].map((i) => (
-                      <div key={i} className="h-20 rounded-lg bg-primary/10 p-3">
-                        <div className="h-2 w-12 bg-primary/30 rounded mb-2" />
-                        <div className="h-6 w-16 bg-primary/20 rounded" />
+              <div className="bg-slate-900 border border-slate-800 rounded-2xl overflow-hidden">
+                {/* Dashboard header */}
+                <div className="border-b border-slate-800 px-5 py-4 flex items-center justify-between">
+                  <div className="flex items-center gap-3">
+                    <div className="h-2.5 w-2.5 rounded-full bg-slate-700" />
+                    <div className="h-2.5 w-2.5 rounded-full bg-slate-700" />
+                    <div className="h-2.5 w-2.5 rounded-full bg-slate-700" />
+                  </div>
+                  <span className="text-xs text-slate-500 font-medium">NebullaOS Dashboard</span>
+                  <div className="h-5 w-5 rounded bg-slate-800" />
+                </div>
+
+                <div className="p-5 space-y-4">
+                  {/* Stat row */}
+                  <div className="grid grid-cols-3 gap-3">
+                    {[
+                      { label: "Marketing ROI", value: "+148%", color: "text-blue-400" },
+                      { label: "Leads This Month", value: "2,841", color: "text-purple-400" },
+                      { label: "Content Score", value: "94/100", color: "text-blue-400" },
+                    ].map((stat, i) => (
+                      <div key={i} className="bg-slate-800/60 rounded-xl p-3">
+                        <p className="text-xs text-slate-500 mb-1">{stat.label}</p>
+                        <p className={`text-base font-bold font-display ${stat.color}`}>{stat.value}</p>
                       </div>
                     ))}
                   </div>
-                  <div className="h-32 rounded-lg bg-gradient-to-r from-primary/10 to-accent/10 mb-4 flex items-end p-4">
-                    <div className="flex gap-2 items-end">
-                      {[40, 60, 45, 80, 65, 90, 70].map((h, i) => (
-                        <div key={i} className="w-8 bg-primary/40 rounded-t" style={{ height: `${h}%` }} />
-                      ))}
+
+                  {/* Real-time Marketing ROI bar chart */}
+                  <div className="bg-slate-800/40 border border-slate-800 rounded-xl p-4">
+                    <div className="flex items-center justify-between mb-3">
+                      <span className="text-xs font-medium text-slate-300">Real-time Marketing ROI</span>
+                      <span className="text-xs text-blue-400">Live</span>
                     </div>
+                    <svg viewBox="0 0 260 80" className="w-full" preserveAspectRatio="none" style={{ height: 80 }}>
+                      {/* Grid lines */}
+                      {[20, 40, 60, 80].map((y) => (
+                        <line key={y} x1="0" y1={y} x2="260" y2={y} stroke="rgba(148,163,184,0.08)" strokeWidth="1" />
+                      ))}
+                      {/* Bars */}
+                      {[
+                        { x: 10,  h: 35, w: 28 },
+                        { x: 48,  h: 52, w: 28 },
+                        { x: 86,  h: 42, w: 28 },
+                        { x: 124, h: 68, w: 28 },
+                        { x: 162, h: 55, w: 28 },
+                        { x: 200, h: 72, w: 28 },
+                        { x: 225, h: 60, w: 28 },
+                      ].map((bar, i) => (
+                        <rect
+                          key={i}
+                          x={bar.x}
+                          y={80 - bar.h}
+                          width={bar.w}
+                          height={bar.h}
+                          rx="3"
+                          fill={i === 5 ? "#2E90FA" : "rgba(46,144,250,0.35)"}
+                        />
+                      ))}
+                    </svg>
                   </div>
-                  <div className="grid grid-cols-2 gap-3">
-                    <div className="h-16 rounded-lg bg-muted/30" />
-                    <div className="h-16 rounded-lg bg-muted/30" />
+
+                  {/* Brand Performance line graph */}
+                  <div className="bg-slate-800/40 border border-slate-800 rounded-xl p-4">
+                    <div className="flex items-center justify-between mb-3">
+                      <span className="text-xs font-medium text-slate-300">Brand Performance</span>
+                      <span className="text-xs text-purple-400">+12% this week</span>
+                    </div>
+                    <svg viewBox="0 0 260 60" className="w-full" preserveAspectRatio="none" style={{ height: 60 }}>
+                      {/* Area fill */}
+                      <defs>
+                        <linearGradient id="lineGrad" x1="0" y1="0" x2="0" y2="1">
+                          <stop offset="0%" stopColor="#9E77ED" stopOpacity="0.2" />
+                          <stop offset="100%" stopColor="#9E77ED" stopOpacity="0" />
+                        </linearGradient>
+                      </defs>
+                      <path
+                        d="M0,50 L40,42 L80,38 L120,28 L160,20 L200,15 L260,8 L260,60 L0,60 Z"
+                        fill="url(#lineGrad)"
+                      />
+                      <path
+                        d="M0,50 L40,42 L80,38 L120,28 L160,20 L200,15 L260,8"
+                        fill="none"
+                        stroke="#9E77ED"
+                        strokeWidth="2"
+                        strokeLinejoin="round"
+                      />
+                      {/* Dots */}
+                      {[
+                        [0, 50], [40, 42], [80, 38], [120, 28], [160, 20], [200, 15], [260, 8]
+                      ].map(([cx, cy], i) => (
+                        <circle key={i} cx={cx} cy={cy} r="3" fill="#9E77ED" />
+                      ))}
+                    </svg>
                   </div>
                 </div>
               </div>
-              
-              {/* Floating elements */}
-              <div className="absolute -top-4 -right-4 h-32 w-32 rounded-full bg-primary/20 blur-2xl" />
-              <div className="absolute -bottom-4 -left-4 h-32 w-32 rounded-full bg-accent/20 blur-2xl" />
             </div>
           </div>
         </div>
       </section>
 
       {/* Early Access CTA */}
-      <section className="py-12 md:py-20">
+      <section className="py-12 md:py-20 border-t border-slate-800/50">
         <div className="container mx-auto px-6">
-          <div className="relative rounded-3xl bg-gradient-to-r from-primary/20 via-accent/20 to-primary/20 p-px">
-            <div className="rounded-3xl bg-background/90 backdrop-blur-xl p-8 md:p-16">
-              <div className="mx-auto max-w-2xl text-center">
-                <div className="mb-6 inline-flex items-center gap-2 rounded-full bg-primary/10 px-4 py-2">
-                  <Globe className="h-4 w-4 text-primary" />
-                  <span className="text-sm text-primary font-medium">Limited Early Access</span>
-                </div>
-                
-                <h2 className="font-display text-3xl font-bold text-foreground md:text-4xl mb-6">
-                  Request Early Access to{" "}
-                  <span className="gradient-text">NebullaOS</span>
-                </h2>
-
-                <p className="text-lg text-muted-foreground mb-8">
-                  A limited number of early access spots are available. Join the list to secure your place and receive founding member pricing.
-                </p>
-                
-                <form onSubmit={handleSubmit} className="mx-auto max-w-md">
-                  <div className="flex flex-col sm:flex-row gap-3">
-                    <Input
-                      type="email"
-                      placeholder="Enter your email"
-                      value={email}
-                      onChange={(e) => setEmail(e.target.value)}
-                      className="h-14 bg-card/50 border-border/50 text-foreground placeholder:text-muted-foreground"
-                      required
-                    />
-                    <Button variant="hero" size="xl" type="submit" disabled={isSubmitting}>
-                      {isSubmitting ? "Joining..." : "Join Waitlist"}
-                    </Button>
-                  </div>
-                </form>
+          <div className="rounded-3xl border border-slate-800 bg-slate-900/40 p-8 md:p-16">
+            <div className="mx-auto max-w-2xl text-center">
+              <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-blue-500/30 bg-blue-500/10 px-4 py-2">
+                <Globe className="h-4 w-4 text-blue-400" />
+                <span className="text-sm text-blue-400 font-medium">Limited Early Access</span>
               </div>
+
+              <h2 className="font-display text-3xl font-bold tracking-tighter text-slate-100 md:text-4xl mb-6">
+                Request Early Access to{" "}
+                <span style={{ color: '#2E90FA', textShadow: '0 0 20px rgba(46, 144, 250, 0.5)' }}>NebullaOS</span>
+              </h2>
+
+              <p className="text-lg text-slate-400 mb-8">
+                A limited number of early access spots are available. Join the list to secure your place and receive founding member pricing.
+              </p>
+
+              <form onSubmit={handleSubmit} className="mx-auto max-w-md">
+                <div className="flex flex-col sm:flex-row gap-3">
+                  <Input
+                    type="email"
+                    placeholder="Enter your email"
+                    value={email}
+                    onChange={(e) => setEmail(e.target.value)}
+                    className="h-14 bg-slate-900 border-slate-800 text-slate-100 placeholder:text-slate-400 focus:border-blue-400"
+                    required
+                  />
+                  <button
+                    type="submit"
+                    disabled={isSubmitting}
+                    className="inline-flex items-center justify-center gap-2 bg-blue-600 hover:bg-blue-500 text-white font-semibold rounded-xl px-6 py-3 transition-colors duration-200 whitespace-nowrap disabled:opacity-60"
+                  >
+                    {isSubmitting ? "Joining..." : "Join Waitlist"}
+                  </button>
+                </div>
+              </form>
             </div>
           </div>
         </div>

@@ -84,7 +84,7 @@ const BrandingIdentity = () => {
   const ctaSection = useInView(0.1);
 
   return (
-    <div className="min-h-screen bg-background nebula-bg animate-page-enter">
+    <div className="min-h-screen bg-[#111620] nocturnal-bg animate-page-enter">
       <Helmet>
         <title>Brand Identity & Strategy for Ambitious Businesses | Nebulla</title>
         <meta
@@ -119,18 +119,16 @@ const BrandingIdentity = () => {
 
         <div className="container relative mx-auto px-6">
           <div className="mx-auto max-w-4xl text-center">
-            <h1 className="mb-6 font-display text-3xl font-bold tracking-tight text-foreground md:text-5xl lg:text-6xl animate-fade-in-up">
+            <h1 className="mb-6 font-display text-3xl font-bold tracking-tighter text-slate-100 md:text-5xl lg:text-6xl animate-fade-in-up">
               Your Brand Is the{" "}
-              <span className="gradient-text">First System We Build</span>
+              <span style={{ color: '#2E90FA', textShadow: '0 0 20px rgba(46, 144, 250, 0.5)' }}>First System We Build</span>
             </h1>
-            <p className="text-lg md:text-xl text-muted-foreground mb-10 max-w-3xl mx-auto animate-fade-in-up delay-100">
+            <p className="text-lg md:text-xl text-slate-400 mb-10 max-w-3xl mx-auto animate-fade-in-up delay-100">
               Before automation, before growth — there's identity. We build brand systems that communicate authority on sight and scale across every market you enter.
             </p>
             <div className="animate-fade-in-up delay-200">
-              <Button
-                variant="hero"
-                size="xl"
-                className="group"
+              <button
+                className="group inline-flex items-center gap-2 bg-blue-600 hover:bg-blue-500 text-white font-semibold rounded-xl px-8 py-4 transition-colors duration-200"
                 onClick={() =>
                   (window as any).Calendly?.initPopupWidget({
                     url: "https://calendly.com/connor-nebulla/30min",
@@ -139,7 +137,7 @@ const BrandingIdentity = () => {
               >
                 Book a Strategy Call
                 <ArrowRight className="ml-2 h-5 w-5 transition-transform duration-200 group-hover:translate-x-1" />
-              </Button>
+              </button>
             </div>
           </div>
         </div>
@@ -150,10 +148,10 @@ const BrandingIdentity = () => {
         <div className="absolute inset-0 bg-gradient-to-b from-transparent via-nebula-surface/30 to-transparent" />
         <div className="container relative mx-auto px-6">
           <AnimateIn direction="up" className="text-center mb-10">
-            <h2 className="font-display text-3xl font-bold text-foreground md:text-4xl mb-4">
+            <h2 className="font-display text-3xl font-bold text-slate-100 md:text-4xl mb-4">
               Why Most Brands Don't Scale
             </h2>
-            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+            <p className="text-lg text-slate-400 max-w-2xl mx-auto">
               You've outgrown your original brand. Maybe it was built fast, by a freelancer, or by committee. Now it's costing you credibility in rooms that matter.
             </p>
           </AnimateIn>
@@ -162,7 +160,7 @@ const BrandingIdentity = () => {
             {problems.map((problem, i) => (
               <div
                 key={i}
-                className="flex items-start gap-4 rounded-2xl border border-border/50 bg-card/30 p-6 backdrop-blur-sm"
+                className="flex items-start gap-4 rounded-2xl border border-slate-800/50 bg-slate-900/30 p-6"
                 style={{
                   opacity: problemSection[1] ? 1 : 0,
                   transform: problemSection[1] ? "none" : "translateY(24px)",
@@ -173,7 +171,7 @@ const BrandingIdentity = () => {
                 }}
               >
                 <XCircle className="h-5 w-5 text-destructive flex-shrink-0 mt-0.5" />
-                <p className="text-muted-foreground">{problem}</p>
+                <p className="text-slate-400">{problem}</p>
               </div>
             ))}
           </div>
@@ -184,7 +182,7 @@ const BrandingIdentity = () => {
       <section className="py-12 md:py-20">
         <div className="container mx-auto px-6">
           <AnimateIn direction="up" className="text-center mb-10">
-            <h2 className="font-display text-3xl font-bold text-foreground md:text-4xl mb-4">
+            <h2 className="font-display text-3xl font-bold text-slate-100 md:text-4xl mb-4">
               What We Deliver
             </h2>
           </AnimateIn>
@@ -193,7 +191,7 @@ const BrandingIdentity = () => {
             {deliverables.map((item, i) => (
               <div
                 key={i}
-                className="group rounded-2xl border border-border/50 bg-card/30 p-8 backdrop-blur-sm transition-all duration-500 hover:border-primary/50 hover:-translate-y-1 hover:shadow-[0_20px_60px_hsl(var(--primary)/0.15)]"
+                className="group rounded-2xl border border-slate-800/50 bg-slate-900/30 p-8 transition-all duration-300 hover:-translate-y-1"
                 style={{
                   opacity: deliverablesGrid[1] ? 1 : 0,
                   transform: deliverablesGrid[1] ? "none" : "translateY(36px)",
@@ -203,13 +201,13 @@ const BrandingIdentity = () => {
                   transitionDelay: `${i * 100}ms`,
                 }}
               >
-                <div className="mb-6 inline-flex rounded-xl bg-gradient-to-br from-primary/20 to-accent/20 p-3 transition-transform duration-300 group-hover:scale-110">
-                  <item.icon className="h-6 w-6 text-primary" />
+                <div className="mb-6 inline-flex rounded-xl bg-slate-800/50 p-3 transition-transform duration-300 group-hover:scale-110">
+                  <item.icon className="h-6 w-6 text-blue-400" />
                 </div>
-                <h3 className="mb-3 font-display text-xl font-semibold text-foreground">
+                <h3 className="mb-3 font-display text-xl font-semibold text-slate-100">
                   {item.title}
                 </h3>
-                <p className="text-muted-foreground">{item.description}</p>
+                <p className="text-slate-400">{item.description}</p>
               </div>
             ))}
           </div>
@@ -221,7 +219,7 @@ const BrandingIdentity = () => {
         <div className="absolute inset-0 bg-gradient-to-b from-transparent via-nebula-surface/30 to-transparent" />
         <div className="container relative mx-auto px-6">
           <AnimateIn direction="up" className="text-center mb-12">
-            <h2 className="font-display text-3xl font-bold text-foreground md:text-4xl mb-4">
+            <h2 className="font-display text-3xl font-bold text-slate-100 md:text-4xl mb-4">
               How It Works
             </h2>
           </AnimateIn>
@@ -242,16 +240,16 @@ const BrandingIdentity = () => {
               >
                 {/* Timeline line */}
                 <div className="flex flex-col items-center">
-                  <div className="flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-full bg-gradient-to-br from-primary/20 to-accent/20 border border-primary/30">
-                    <span className="font-display text-sm font-bold text-primary">{step.number}</span>
+                  <div className="flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-full bg-slate-800/50 border border-blue-500/30">
+                    <span className="font-display text-sm font-bold text-blue-400">{step.number}</span>
                   </div>
                   {i < steps.length - 1 && (
                     <div className="w-px flex-1 bg-gradient-to-b from-primary/30 to-transparent mt-2 mb-2 min-h-[2rem]" />
                   )}
                 </div>
                 <div className="pb-8">
-                  <h3 className="font-display text-xl font-semibold text-foreground mb-2">{step.title}</h3>
-                  <p className="text-muted-foreground">{step.description}</p>
+                  <h3 className="font-display text-xl font-semibold text-slate-100 mb-2">{step.title}</h3>
+                  <p className="text-slate-400">{step.description}</p>
                 </div>
               </div>
             ))}
@@ -265,14 +263,14 @@ const BrandingIdentity = () => {
           <AnimateIn direction="up">
             <div
               ref={whoSection[0]}
-              className="rounded-3xl border border-border/50 bg-gradient-to-br from-card/80 to-nebula-surface/80 p-8 md:p-16 relative overflow-hidden max-w-4xl mx-auto"
+              className="rounded-3xl border border-slate-800/50 bg-slate-900/30 p-8 md:p-16 relative overflow-hidden max-w-4xl mx-auto"
             >
               <div className="absolute top-0 right-0 h-64 w-64 rounded-full bg-accent/10 blur-3xl animate-pulse-glow" />
               <div className="relative">
-                <h2 className="font-display text-3xl font-bold text-foreground md:text-4xl mb-6">
+                <h2 className="font-display text-3xl font-bold text-slate-100 md:text-4xl mb-6">
                   Who This Is For
                 </h2>
-                <p className="text-lg text-muted-foreground leading-relaxed mb-8">
+                <p className="text-lg text-slate-400 leading-relaxed mb-8">
                   This service is built for founders and marketing leads at SMEs, startups, and growth-stage companies who need a brand that earns credibility on a global level — not just looks good on a business card. Ideal if you're entering new markets, raising capital, or scaling a team and need a brand that holds up under scrutiny.
                 </p>
                 <div className="space-y-3">
@@ -287,10 +285,10 @@ const BrandingIdentity = () => {
                       transitionDelay: "200ms",
                     }}
                   >
-                    <CheckCircle className="h-5 w-5 text-primary flex-shrink-0" />
-                    <span className="text-foreground">
+                    <CheckCircle className="h-5 w-5 text-blue-400 flex-shrink-0" />
+                    <span className="text-slate-100">
                       Once your brand is built, we engineer websites that bring it to life.{" "}
-                      <Link to="/services/websites-seo" className="text-primary hover:underline">
+                      <Link to="/services/websites-seo" className="text-blue-400 hover:underline">
                         Explore our Websites & SEO service.
                       </Link>
                     </span>
@@ -306,10 +304,10 @@ const BrandingIdentity = () => {
                       transitionDelay: "320ms",
                     }}
                   >
-                    <CheckCircle className="h-5 w-5 text-primary flex-shrink-0" />
-                    <span className="text-foreground">
+                    <CheckCircle className="h-5 w-5 text-blue-400 flex-shrink-0" />
+                    <span className="text-slate-100">
                       We also build the content systems that keep your brand visible.{" "}
-                      <Link to="/services/content-social" className="text-primary hover:underline">
+                      <Link to="/services/content-social" className="text-blue-400 hover:underline">
                         Explore Content Systems.
                       </Link>
                     </span>
@@ -334,18 +332,16 @@ const BrandingIdentity = () => {
             }}
           >
             <div className="relative rounded-3xl bg-gradient-to-r from-primary/20 via-accent/20 to-primary/20 p-px animate-border-shift">
-              <div className="rounded-3xl bg-background/90 backdrop-blur-xl p-8 md:p-16">
+              <div className="rounded-3xl bg-slate-950/90 backdrop-blur-xl p-8 md:p-16">
                 <div className="mx-auto max-w-2xl text-center">
-                  <h2 className="font-display text-3xl font-bold text-foreground md:text-4xl mb-6">
-                    Build a Brand That <span className="gradient-text">Opens Doors</span>
+                  <h2 className="font-display text-3xl font-bold tracking-tighter text-slate-100 md:text-4xl mb-6">
+                    Build a Brand That <span style={{ color: '#2E90FA', textShadow: '0 0 20px rgba(46, 144, 250, 0.5)' }}>Opens Doors</span>
                   </h2>
-                  <p className="text-lg text-muted-foreground mb-8">
+                  <p className="text-lg text-slate-400 mb-8">
                     Schedule a no-obligation strategy call and we'll assess where your brand stands today and what it'll take to get it where it needs to be.
                   </p>
-                  <Button
-                    variant="hero"
-                    size="xl"
-                    className="group"
+                  <button
+                    className="group inline-flex items-center gap-2 bg-blue-600 hover:bg-blue-500 text-white font-semibold rounded-xl px-8 py-4 transition-colors duration-200"
                     onClick={() =>
                       (window as any).Calendly?.initPopupWidget({
                         url: "https://calendly.com/connor-nebulla/30min",
@@ -354,7 +350,7 @@ const BrandingIdentity = () => {
                   >
                     Book a Strategy Call
                     <ArrowRight className="ml-2 h-5 w-5 transition-transform duration-200 group-hover:translate-x-1" />
-                  </Button>
+                  </button>
                 </div>
               </div>
             </div>

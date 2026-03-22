@@ -1,5 +1,4 @@
 import { Link, useLocation } from "react-router-dom";
-import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
 import { useState, useEffect, useRef } from "react";
 
@@ -50,15 +49,13 @@ const Header = () => {
 
   return (
     <header
-      className={`fixed top-0 left-0 right-0 z-50 border-b bg-background/80 backdrop-blur-xl transition-all duration-300 ${
-        scrolled
-          ? "border-border/80 shadow-[0_4px_24px_hsl(220_25%_4%/0.5)]"
-          : "border-border/50"
+      className={`fixed top-0 left-0 right-0 z-50 bg-slate-950/40 backdrop-blur-xl border-b border-slate-800/50 transition-all duration-300 ${
+        scrolled ? "shadow-[0_4px_24px_rgba(10,15,30,0.5)]" : ""
       }`}
     >
       {/* Scroll progress bar */}
       <div
-        className="absolute top-0 left-0 h-0.5 bg-gradient-to-r from-primary to-accent transition-all duration-75"
+        className="absolute top-0 left-0 h-0.5 bg-gradient-to-r from-blue-500 to-purple-500 transition-all duration-75"
         style={{ width: `${scrollProgress}%` }}
       />
 
@@ -77,8 +74,8 @@ const Header = () => {
             >
               <defs>
                 <linearGradient id="logo-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
-                  <stop offset="0%" stopColor="#7c3aed" />
-                  <stop offset="100%" stopColor="#38bdf8" />
+                  <stop offset="0%" stopColor="#9E77ED" />
+                  <stop offset="100%" stopColor="#2E90FA" />
                 </linearGradient>
               </defs>
               <text
@@ -98,11 +95,12 @@ const Header = () => {
           <nav ref={navRef} className="hidden items-center gap-8 md:flex relative" onMouseLeave={handleMouseLeave}>
             {/* Magic sliding underline */}
             <span
-              className="absolute -bottom-[1px] h-0.5 bg-gradient-to-r from-primary to-accent rounded-full transition-all duration-300 ease-out pointer-events-none"
+              className="absolute -bottom-[1px] h-0.5 rounded-full transition-all duration-300 ease-out pointer-events-none"
               style={{
                 left: underline?.left ?? 0,
                 width: underline?.width ?? 0,
                 opacity: isHovering ? 1 : 0,
+                background: "#2E90FA",
               }}
             />
             {navLinks.map((link, i) => (
@@ -111,18 +109,19 @@ const Header = () => {
                 to={link.to}
                 ref={(el) => { linkRefs.current[i] = el; }}
                 onMouseEnter={() => handleMouseEnter(i)}
-                className={`relative font-medium transition-colors duration-300 ${
+                className={`relative text-sm font-medium tracking-tight transition-colors duration-300 ${
                   isActive(link.to)
-                    ? "text-primary"
-                    : "text-muted-foreground hover:text-foreground"
+                    ? "text-blue-400"
+                    : "text-slate-400 hover:text-blue-400"
                 }`}
               >
                 {link.label}
                 {/* Persistent active underline */}
                 <span
-                  className={`absolute -bottom-1 left-0 h-0.5 bg-gradient-to-r from-primary to-accent rounded-full transition-all duration-300 ${
+                  className={`absolute -bottom-1 left-0 h-0.5 rounded-full transition-all duration-300 ${
                     isActive(link.to) && !isHovering ? "w-full opacity-100" : "w-0 opacity-0"
                   }`}
+                  style={{ background: "#2E90FA" }}
                 />
               </Link>
             ))}
@@ -130,14 +129,17 @@ const Header = () => {
 
           {/* CTA Button */}
           <div className="hidden md:block">
-            <Button variant="hero" size="lg" onClick={() => (window as any).Calendly?.initPopupWidget({ url: 'https://calendly.com/connor-nebulla/30min' })}>
+            <button
+              onClick={() => (window as any).Calendly?.initPopupWidget({ url: 'https://calendly.com/connor-nebulla/30min' })}
+              className="bg-blue-600 hover:bg-blue-500 text-white font-semibold px-5 py-2.5 rounded-xl text-sm transition-colors duration-200"
+            >
               Book a Call
-            </Button>
+            </button>
           </div>
 
           {/* Mobile Menu Button */}
           <button
-            className="md:hidden text-foreground transition-transform duration-200 active:scale-90"
+            className="md:hidden text-slate-300 transition-transform duration-200 active:scale-90"
             onClick={() => setIsOpen(!isOpen)}
           >
             <span className="relative block h-6 w-6">
@@ -155,7 +157,7 @@ const Header = () => {
 
         {/* Mobile Navigation */}
         <div
-          className={`md:hidden border-t border-border/50 overflow-hidden transition-all duration-300 ease-in-out ${
+          className={`md:hidden border-t border-slate-800/50 overflow-hidden transition-all duration-300 ease-in-out ${
             isOpen ? "max-h-80 opacity-100 py-6" : "max-h-0 opacity-0 py-0"
           }`}
         >
@@ -167,16 +169,19 @@ const Header = () => {
                 onClick={() => setIsOpen(false)}
                 className={`text-lg font-medium transition-colors ${
                   isActive(link.to)
-                    ? "text-primary"
-                    : "text-muted-foreground"
+                    ? "text-blue-400"
+                    : "text-slate-400"
                 }`}
               >
                 {link.label}
               </Link>
             ))}
-            <Button variant="hero" size="lg" className="mt-4" onClick={() => { setIsOpen(false); (window as any).Calendly?.initPopupWidget({ url: 'https://calendly.com/connor-nebulla/30min' }); }}>
+            <button
+              className="mt-4 bg-blue-600 hover:bg-blue-500 text-white font-semibold px-5 py-3 rounded-xl text-sm transition-colors duration-200"
+              onClick={() => { setIsOpen(false); (window as any).Calendly?.initPopupWidget({ url: 'https://calendly.com/connor-nebulla/30min' }); }}
+            >
               Book a Call
-            </Button>
+            </button>
           </nav>
         </div>
       </div>
