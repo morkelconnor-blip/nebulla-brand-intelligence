@@ -11,7 +11,7 @@ const Footer = () => {
               <img src="/favicon.svg" alt="Nebulla" className="h-8 w-8" />
             </Link>
             <p className="text-sm text-slate-500 max-w-xs">
-              Architecting the digital future for high-performance brands. Built for the Nocturnal Architect.
+              AI-native from day one. Built for businesses that compete globally.
             </p>
           </div>
 

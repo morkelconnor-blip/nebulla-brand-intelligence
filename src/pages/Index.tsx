@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import Contact from "@/components/Contact";
 import ServiceCard from "@/components/ServiceCard";
 import { AnimateIn } from "@/components/AnimateIn";
 import { useInView } from "@/hooks/use-in-view";
@@ -11,7 +12,7 @@ const serviceItems = [
   {
     icon: Palette,
     title: "Branding & Identity",
-    description: "A complete visual and strategic identity system — built to communicate authority from day one and scale across every market you enter.",
+    description: "A brand that commands attention and builds trust before you say a word — identity, messaging, and guidelines built to scale.",
   },
   {
     icon: Code,
@@ -21,7 +22,12 @@ const serviceItems = [
   {
     icon: PenTool,
     title: "Content & Creative Systems",
-    description: "Structured content systems — consistently branded, AI-assisted, and built to grow audience trust across every channel.",
+    description: "AI-assisted content systems that stay on-brand across every channel — built to compound, not repeat.",
+  },
+  {
+    icon: Zap,
+    title: "AI & Automation",
+    description: "Workflow automation and AI agents that replace manual execution — the systems layer no other SA agency builds.",
   },
 ];
 
@@ -91,17 +97,17 @@ const Index = () => {
             </h1>
 
             <p className="mb-10 text-lg text-slate-400 md:text-xl max-w-2xl mx-auto animate-fade-in-up delay-200">
-              Nebulla partners with ambitious companies to build brand systems, digital infrastructure, and AI-powered workflows designed to perform in any market.
+              We build the brand, the systems, and the intelligence your business needs to scale — without adding headcount. Globally capable. AI-native from day one.
             </p>
 
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4 animate-fade-in-up delay-300">
-              <button
-                onClick={() => (window as any).Calendly?.initPopupWidget({ url: 'https://calendly.com/connor-nebulla/30min' })}
+              <a
+                href="#contact"
                 className="group bg-blue-600 hover:bg-blue-500 text-white font-semibold rounded-xl px-8 py-4 transition-colors duration-200 flex items-center gap-2"
               >
-                Book a Strategy Call
+                Get in Touch
                 <ArrowRight className="h-5 w-5 transition-transform duration-200 group-hover:translate-x-1" />
-              </button>
+              </a>
             </div>
           </div>
 
@@ -122,7 +128,7 @@ const Index = () => {
 
           <div
             ref={servicesGrid.ref}
-            className="grid gap-8 md:grid-cols-3"
+            className="grid gap-8 sm:grid-cols-2 lg:grid-cols-4"
           >
             {serviceItems.map((service, i) => (
               <div
@@ -273,25 +279,26 @@ const Index = () => {
             <div className="rounded-3xl border border-slate-800 bg-slate-900/40 p-8 md:p-16">
               <div className="mx-auto max-w-2xl text-center">
                 <h2 className="font-display text-3xl font-bold tracking-tighter text-slate-100 md:text-4xl mb-6">
-                  Ready to Build a Brand That{" "}
-                  <span style={{ color: '#2E90FA', textShadow: '0 0 20px rgba(46, 144, 250, 0.5)' }}>Competes Globally?</span>
+                  Ready to build something that{" "}
+                  <span style={{ color: '#2E90FA', textShadow: '0 0 20px rgba(46, 144, 250, 0.5)' }}>lasts?</span>
                 </h2>
                 <p className="text-lg text-slate-400 mb-8">
-                  Schedule a no-obligation strategy call to explore what Nebulla can build for you.
+                  Tell us about your business and we'll take it from there.
                 </p>
-                <button
-                  onClick={() => (window as any).Calendly?.initPopupWidget({ url: 'https://calendly.com/connor-nebulla/30min' })}
+                <a
+                  href="#contact"
                   className="group inline-flex items-center gap-2 bg-blue-600 hover:bg-blue-500 text-white font-semibold rounded-xl px-8 py-4 transition-colors duration-200"
                 >
-                  Book a Strategy Call
+                  Get in Touch
                   <ArrowRight className="h-5 w-5 transition-transform duration-200 group-hover:translate-x-1" />
-                </button>
+                </a>
               </div>
             </div>
           </div>
         </div>
       </section>
 
+      <Contact />
       <Footer />
     </div>
   );

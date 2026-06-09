@@ -129,12 +129,12 @@ const Header = () => {
 
           {/* CTA Button */}
           <div className="hidden md:block">
-            <button
-              onClick={() => (window as any).Calendly?.initPopupWidget({ url: 'https://calendly.com/connor-nebulla/30min' })}
+            <a
+              href="/#contact"
               className="bg-blue-600 hover:bg-blue-500 text-white font-semibold px-5 py-2.5 rounded-xl text-sm transition-colors duration-200"
             >
-              Book a Call
-            </button>
+              Get in Touch
+            </a>
           </div>
 
           {/* Mobile Menu Button */}
@@ -176,12 +176,13 @@ const Header = () => {
                 {link.label}
               </Link>
             ))}
-            <button
-              className="mt-4 bg-blue-600 hover:bg-blue-500 text-white font-semibold px-5 py-3 rounded-xl text-sm transition-colors duration-200"
-              onClick={() => { setIsOpen(false); (window as any).Calendly?.initPopupWidget({ url: 'https://calendly.com/connor-nebulla/30min' }); }}
+            <a
+              href="/#contact"
+              className="mt-4 block text-center bg-blue-600 hover:bg-blue-500 text-white font-semibold px-5 py-3 rounded-xl text-sm transition-colors duration-200"
+              onClick={() => setIsOpen(false)}
             >
-              Book a Call
-            </button>
+              Get in Touch
+            </a>
           </nav>
         </div>
       </div>
