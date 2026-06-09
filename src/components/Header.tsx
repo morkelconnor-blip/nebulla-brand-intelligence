@@ -27,7 +27,7 @@ const Header = () => {
     { to: "/", label: "Home" },
     { to: "/about", label: "About" },
     { to: "/services", label: "Services" },
-    { to: "/nebullaos", label: "NebullaOS" },
+    // NEBULLAOS_NAV: { to: "/nebullaos", label: "NebullaOS" },
     { to: "/contact", label: "Contact" },
   ];
 

@@ -1,11 +1,11 @@
-import { Link } from "react-router-dom";
+// NEBULLAOS_IMPORTS: import { Link } from "react-router-dom"; Globe, BarChart3 from lucide-react
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import Contact from "@/components/Contact";
 import ServiceCard from "@/components/ServiceCard";
 import { AnimateIn } from "@/components/AnimateIn";
 import { useInView } from "@/hooks/use-in-view";
-import { Sparkles, Globe, Zap, BarChart3, Palette, Code, PenTool, ArrowRight } from "lucide-react";
+import { Sparkles, Zap, Palette, Code, PenTool, ArrowRight } from "lucide-react";
 import { Helmet } from "react-helmet-async";
 
 const serviceItems = [
@@ -38,12 +38,14 @@ const automationItems = [
   "AI-assisted content at scale",
 ];
 
+/* NEBULLAOS_DATA — restore when ready to launch
 const nebullaOSFeatures = [
   { icon: BarChart3, label: "Real-time Analytics" },
   { icon: Sparkles, label: "AI Generation" },
   { icon: Zap, label: "Automation" },
   { icon: Globe, label: "Global Scale" },
 ];
+*/
 
 // Staggered grid reveal hook
 function useStaggeredGrid() {
@@ -54,7 +56,7 @@ function useStaggeredGrid() {
 const Index = () => {
   const servicesGrid = useStaggeredGrid();
   const automationSection = useStaggeredGrid();
-  const nebullaOSSection = useStaggeredGrid();
+  // NEBULLAOS_HOOK: const nebullaOSSection = useStaggeredGrid();
   const ctaSection = useStaggeredGrid();
 
   return (
@@ -206,7 +208,7 @@ const Index = () => {
         </div>
       </section>
 
-      {/* ── NebullaOS Preview ──────────────────────────────────── */}
+      {/* NEBULLAOS_SECTION — restore when ready to launch
       <section className="py-12 md:py-20 border-t border-slate-800/50">
         <div className="container mx-auto px-6">
           <AnimateIn direction="scale">
@@ -220,16 +222,13 @@ const Index = () => {
                     <Globe className="h-4 w-4 text-blue-400" />
                     <span className="text-sm text-blue-400 font-medium">Early Access</span>
                   </div>
-
                   <h2 className="font-display text-3xl font-bold tracking-tighter text-slate-100 md:text-4xl mb-6">
                     Introducing{" "}
                     <span style={{ color: '#2E90FA', textShadow: '0 0 20px rgba(46, 144, 250, 0.5)' }}>NebullaOS</span>
                   </h2>
-
                   <p className="text-lg text-slate-400 mb-8 leading-relaxed">
                     A proprietary intelligence platform — real-time analytics, AI content generation, automated reporting, and performance tracking, unified in one dashboard.
                   </p>
-
                   <Link
                     to="/nebullaos"
                     className="group inline-flex items-center gap-2 bg-blue-600 hover:bg-blue-500 text-white font-semibold rounded-xl px-6 py-3 transition-colors duration-200"
@@ -238,7 +237,6 @@ const Index = () => {
                     <ArrowRight className="h-4 w-4 transition-transform duration-200 group-hover:translate-x-1" />
                   </Link>
                 </div>
-
                 <div className="grid grid-cols-2 gap-4">
                   {nebullaOSFeatures.map((item, i) => (
                     <div
@@ -263,6 +261,7 @@ const Index = () => {
           </AnimateIn>
         </div>
       </section>
+      */}
 
       {/* ── CTA Section ────────────────────────────────────────── */}
       <section className="py-12 md:py-20 bg-slate-900/20 border-t border-slate-800/50">
