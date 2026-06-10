@@ -127,17 +127,13 @@ const BrandingIdentity = () => {
               Before automation, before growth — there's identity. We build brand systems that communicate authority on sight and scale across every market you enter.
             </p>
             <div className="animate-fade-in-up delay-200">
-              <button
+              <a
+                href="/#contact"
                 className="group inline-flex items-center gap-2 bg-blue-600 hover:bg-blue-500 text-white font-semibold rounded-xl px-8 py-4 transition-colors duration-200"
-                onClick={() =>
-                  (window as any).Calendly?.initPopupWidget({
-                    url: "https://calendly.com/connor-nebulla/30min",
-                  })
-                }
               >
-                Book a Strategy Call
+                Get in Touch
                 <ArrowRight className="ml-2 h-5 w-5 transition-transform duration-200 group-hover:translate-x-1" />
-              </button>
+              </a>
             </div>
           </div>
         </div>
@@ -338,19 +334,15 @@ const BrandingIdentity = () => {
                     Build a Brand That <span style={{ color: '#2E90FA', textShadow: '0 0 20px rgba(46, 144, 250, 0.5)' }}>Opens Doors</span>
                   </h2>
                   <p className="text-lg text-slate-400 mb-8">
-                    Schedule a no-obligation strategy call and we'll assess where your brand stands today and what it'll take to get it where it needs to be.
+                    Tell us where your brand stands today and what it'll take to get it where it needs to be.
                   </p>
-                  <button
+                  <a
+                    href="/#contact"
                     className="group inline-flex items-center gap-2 bg-blue-600 hover:bg-blue-500 text-white font-semibold rounded-xl px-8 py-4 transition-colors duration-200"
-                    onClick={() =>
-                      (window as any).Calendly?.initPopupWidget({
-                        url: "https://calendly.com/connor-nebulla/30min",
-                      })
-                    }
                   >
-                    Book a Strategy Call
+                    Get in Touch
                     <ArrowRight className="ml-2 h-5 w-5 transition-transform duration-200 group-hover:translate-x-1" />
-                  </button>
+                  </a>
                 </div>
               </div>
             </div>

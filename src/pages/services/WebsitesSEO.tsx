@@ -127,17 +127,13 @@ const WebsitesSEO = () => {
               Your website is your highest-leverage sales asset. We build sites engineered for search visibility, conversion, and speed — not just aesthetics.
             </p>
             <div className="animate-fade-in-up delay-200">
-              <button
+              <a
+                href="/#contact"
                 className="group inline-flex items-center gap-2 bg-blue-600 hover:bg-blue-500 text-white font-semibold rounded-xl px-8 py-4 transition-colors duration-200"
-                onClick={() =>
-                  (window as any).Calendly?.initPopupWidget({
-                    url: "https://calendly.com/connor-nebulla/30min",
-                  })
-                }
               >
-                Book a Strategy Call
+                Get in Touch
                 <ArrowRight className="ml-2 h-5 w-5 transition-transform duration-200 group-hover:translate-x-1" />
-              </button>
+              </a>
             </div>
           </div>
         </div>
@@ -338,19 +334,15 @@ const WebsitesSEO = () => {
                     <span style={{ color: '#2E90FA', textShadow: '0 0 20px rgba(46, 144, 250, 0.5)' }}>Best Salesperson</span>
                   </h2>
                   <p className="text-lg text-slate-400 mb-8">
-                    Book a strategy call and we'll audit your current site's performance and show you exactly where you're losing visitors and revenue.
+                    Get in touch and we'll show you exactly where you're losing visitors and revenue.
                   </p>
-                  <button
+                  <a
+                    href="/#contact"
                     className="group inline-flex items-center gap-2 bg-blue-600 hover:bg-blue-500 text-white font-semibold rounded-xl px-8 py-4 transition-colors duration-200"
-                    onClick={() =>
-                      (window as any).Calendly?.initPopupWidget({
-                        url: "https://calendly.com/connor-nebulla/30min",
-                      })
-                    }
                   >
-                    Book a Strategy Call
+                    Get in Touch
                     <ArrowRight className="ml-2 h-5 w-5 transition-transform duration-200 group-hover:translate-x-1" />
-                  </button>
+                  </a>
                 </div>
               </div>
             </div>

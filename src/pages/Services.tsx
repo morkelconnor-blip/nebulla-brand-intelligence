@@ -260,15 +260,15 @@ const Services = () => {
                   Ready to Build a Brand That <span style={{ color: '#2E90FA', textShadow: '0 0 20px rgba(46, 144, 250, 0.5)' }}>Competes Globally?</span>
                 </h2>
                 <p className="text-lg text-slate-400 mb-8">
-                  Schedule a no-obligation strategy call to explore what Nebulla can build for you.
+                  Tell us about your business and we'll take it from there.
                 </p>
-                <button
-                  onClick={() => (window as any).Calendly?.initPopupWidget({ url: 'https://calendly.com/connor-nebulla/30min' })}
+                <a
+                  href="/#contact"
                   className="group inline-flex items-center gap-2 bg-blue-600 hover:bg-blue-500 text-white font-semibold rounded-xl px-8 py-4 transition-colors duration-200"
                 >
-                  Book a Call
+                  Get in Touch
                   <ArrowRight className="h-5 w-5 transition-transform duration-200 group-hover:translate-x-1" />
-                </button>
+                </a>
               </div>
             </div>
           </div>

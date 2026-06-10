@@ -50,7 +50,7 @@ const PrivacyPolicy = () => {
             <div>
               <h2 className="font-display text-2xl font-semibold text-slate-100 mb-4">4. Third-Party Services</h2>
               <p className="text-slate-400 leading-relaxed">
-                We use third-party services including Google Analytics (analytics), Formspree (form submissions), and Calendly (meeting scheduling). Each operates under its own privacy policy governing how data is used and stored.
+                We use third-party services including Google Analytics (analytics) and Formspree (form submissions). Each operates under its own privacy policy governing how data is used and stored.
               </p>
             </div>
 

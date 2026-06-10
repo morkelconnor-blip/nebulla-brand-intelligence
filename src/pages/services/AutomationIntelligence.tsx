@@ -129,17 +129,13 @@ const AutomationIntelligence = () => {
               We build custom AI systems that replace manual operations with intelligent automation — real-time dashboards, automated workflows, and reporting infrastructure that runs without your team touching it.
             </p>
             <div className="animate-fade-in-up delay-200">
-              <button
+              <a
+                href="/#contact"
                 className="group inline-flex items-center gap-2 bg-blue-600 hover:bg-blue-500 text-white font-semibold rounded-xl px-8 py-4 transition-colors duration-200"
-                onClick={() =>
-                  (window as any).Calendly?.initPopupWidget({
-                    url: "https://calendly.com/connor-nebulla/30min",
-                  })
-                }
               >
-                Book a Strategy Call
+                Get in Touch
                 <ArrowRight className="ml-2 h-5 w-5 transition-transform duration-200 group-hover:translate-x-1" />
-              </button>
+              </a>
             </div>
           </div>
         </div>
@@ -340,19 +336,15 @@ const AutomationIntelligence = () => {
                     <span style={{ color: '#2E90FA', textShadow: '0 0 20px rgba(46, 144, 250, 0.5)' }}>Start Scaling With Systems.</span>
                   </h2>
                   <p className="text-lg text-slate-400 mb-8">
-                    Book a strategy call and we'll diagnose your biggest operational bottleneck and show you exactly how an AI-driven system can replace it.
+                    Get in touch and we'll diagnose your biggest operational bottleneck and show you exactly how an AI-driven system can replace it.
                   </p>
-                  <button
+                  <a
+                    href="/#contact"
                     className="group inline-flex items-center gap-2 bg-blue-600 hover:bg-blue-500 text-white font-semibold rounded-xl px-8 py-4 transition-colors duration-200"
-                    onClick={() =>
-                      (window as any).Calendly?.initPopupWidget({
-                        url: "https://calendly.com/connor-nebulla/30min",
-                      })
-                    }
                   >
-                    Book a Strategy Call
+                    Get in Touch
                     <ArrowRight className="ml-2 h-5 w-5 transition-transform duration-200 group-hover:translate-x-1" />
-                  </button>
+                  </a>
                 </div>
               </div>
             </div>

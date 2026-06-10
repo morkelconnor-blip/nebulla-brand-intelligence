@@ -5,7 +5,6 @@ import { Textarea } from "@/components/ui/textarea";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import {
-  Calendar,
   Mail,
   ArrowRight,
   Send,
@@ -60,16 +59,16 @@ const Contact = () => {
     <div className="min-h-screen bg-[#111620] nocturnal-bg">
       <Helmet>
         <title>Contact Nebulla | Start the Conversation</title>
-        <meta name="description" content="Ready to replace manual execution with automated systems? Book a free strategy call or send us a message — we respond to all enquiries within one business day." />
-        <meta name="keywords" content="contact Nebulla, book a strategy call, AI agency enquiry, hire AI automation agency, brand strategy call" />
+        <meta name="description" content="Ready to replace manual execution with automated systems? Send us a message or email us directly — we respond to all enquiries within one business day." />
+        <meta name="keywords" content="contact Nebulla, AI agency enquiry, hire AI automation agency, brand strategy enquiry" />
         <meta property="og:title" content="Contact Nebulla | Start the Conversation" />
-        <meta property="og:description" content="Book a free strategy call or send us a message. We respond to all enquiries within one business day." />
+        <meta property="og:description" content="Send us a message or email us directly. We respond to all enquiries within one business day." />
         <meta property="og:image" content="https://www.nebulla.agency/og-image.png" />
         <meta property="og:url" content="https://www.nebulla.agency/contact" />
         <meta property="og:type" content="website" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Contact Nebulla | Start the Conversation" />
-        <meta name="twitter:description" content="Book a free strategy call or send an enquiry — Nebulla responds within one business day." />
+        <meta name="twitter:description" content="Send us a message or email us directly — Nebulla responds within one business day." />
         <meta name="twitter:image" content="https://www.nebulla.agency/og-image.png" />
         <link rel="canonical" href="https://www.nebulla.agency/contact" />
       </Helmet>
@@ -97,29 +96,9 @@ const Contact = () => {
       {/* Contact Options */}
       <section className="py-12 md:py-20 border-t border-slate-800/50">
         <div className="container mx-auto px-6">
-          <div className="grid gap-8 lg:grid-cols-2 max-w-3xl mx-auto mb-20">
-            {/* Book a Call */}
-            <div className="group border border-slate-800 bg-slate-900/30 rounded-2xl p-8 transition-all duration-300 hover:border-slate-700 hover:-translate-y-1">
-              <div className="mb-6 inline-flex bg-slate-800/60 rounded-xl p-4">
-                <Calendar className="h-8 w-8 text-slate-400 group-hover:text-blue-400 transition-colors duration-300" />
-              </div>
-              <h3 className="mb-3 font-display text-xl font-semibold text-slate-100">
-                Book a Strategy Call
-              </h3>
-              <p className="text-slate-400 mb-6">
-                A focused 30-minute call to understand your goals and determine how Nebulla can help.
-              </p>
-              <button
-                onClick={() => (window as any).Calendly?.initPopupWidget({ url: 'https://calendly.com/connor-nebulla/30min' })}
-                className="w-full inline-flex items-center justify-center gap-2 bg-blue-600 hover:bg-blue-500 text-white font-semibold rounded-xl px-6 py-3 transition-colors duration-200"
-              >
-                Schedule Call
-                <ArrowRight className="h-4 w-4" />
-              </button>
-            </div>
-
+          <div className="max-w-md mx-auto mb-20">
             {/* Email */}
-            <div className="group border border-slate-800 bg-slate-900/30 rounded-2xl p-8 transition-all duration-300 hover:border-slate-700 hover:-translate-y-1">
+            <div className="group border border-slate-800 bg-slate-900/30 rounded-2xl p-8 text-center transition-all duration-300 hover:border-slate-700 hover:-translate-y-1">
               <div className="mb-6 inline-flex bg-slate-800/60 rounded-xl p-4">
                 <Mail className="h-8 w-8 text-purple-400 group-hover:text-purple-300 transition-colors duration-300" />
               </div>
